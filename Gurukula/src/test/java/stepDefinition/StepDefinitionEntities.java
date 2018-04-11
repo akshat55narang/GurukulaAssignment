@@ -24,6 +24,8 @@ public class StepDefinitionEntities {
 	public WebDriverWait wait;
 	public StaffOverviewPage staff;
 	public BranchOverViewPage branch;
+	private int countBefore; 
+	private int countAfter;
 	
 	public StepDefinitionEntities(TestContext context){
 		testContext=context;
@@ -69,13 +71,18 @@ public class StepDefinitionEntities {
 	
 	@Then("^User should be able to see the specific ([^\"]*) with name \"([^\"]*)\"$")
 	public void user_should_be_able_to_see_a_list(String entity,String name) throws Throwable {
-	    if(entity.equals("Staff")){
-	    	 int count = staff.getStaffRowNameCoulumn().size();
-			   for(int i=0;i<count;i++){
+		
+		if(entity.equals("Staff")){
+			 int count = staff.getStaffRowNameCoulumn().size();
+	    	 System.out.println(count);
+	    	 System.out.println(staff.getStaffRowNameCoulumn().get(count - 1).getText());
+			  
+	    	 for(int i=0;i<count;i++){
 				   if(staff.getStaffRowNameCoulumn().get(i).getText().equals(name)){
+					   System.out.println("inside loop");
 				   staff.getViewStaffButton().get(i).click();
 				   Assert.assertTrue(staff.getStaffViewFormName().getAttribute("value").contains(name));  
-				   staff.getBackButtonOnViewForm().click();
+				  // staff.getBackButtonOnViewForm().click();
 			   
 				   }
 			   }
@@ -91,66 +98,159 @@ public class StepDefinitionEntities {
 				   }
 			  
 				  }
-			 testContext.getWebDriverManager().closeBrowser();
+			 
 	    }
 	}
 
 	@Given("^User opens Entities Menu$")
 	public void user_opens_Entities_Menu() throws Throwable {
 	    home.getEntitiesMenu().click();
-	    wait = new WebDriverWait(testContext.getWebDriverManager().getDriver(), 10);
-	    wait.until(ExpectedConditions.visibilityOf(home.getListItemBranchFromEntitiesMenu()));
+	  //  wait = new WebDriverWait(testContext.getWebDriverManager().getDriver(), 10);
+	  //  wait.until(ExpectedConditions.visibilityOf(home.getListItemBranchFromEntitiesMenu()));
+	    testContext.getWebDriverManager().getExplicitWaitForElement(home.getListItemBranchFromEntitiesMenu(), "visibility");
 	}
 
 	@Given("^User selects ([^\"]*) Menu$")
 	public void user_opens_Entities_Menu(String entityoption) throws Throwable {
 		if(entityoption.equals("Staff")){
 		home.getListItemStaffFromEntitiesMenu().click();
-		System.out.println("Staffs");
+		testContext.getWebDriverManager().getExplicitWaitForElement(staff.getCreateStaffButton(), "visibility");
 		}
 		else if(entityoption.equals("Branch")){
 		home.getListItemBranchFromEntitiesMenu().click();
+		testContext.getWebDriverManager().getExplicitWaitForElement(branch.getCreateBranchButton(), "visibility");
 		}
 	}
 
-	@When("^User creates a new ([^\"]*) entry$")
-	public void user_creates_a_new_Entity_entry(String entity) throws Throwable {
+	@When("^User creates a new ([^\"]*) entry with name \"([^\"]*)\"$")
+	public void user_creates_a_new_Entity_entry(String entity,String name) throws Throwable {
 	    if(entity.equals("Staff")){
 	    	staff.getCreateStaffButton().click();
-	    	staff.getFormInputName().sendKeys("akshatnarang");
+	    	testContext.getWebDriverManager().getExplicitWaitForElement(staff.getCancelButton(), "visibility");
+	    	staff.getFormInputName().sendKeys(name);
+	    	countBefore = staff.getStaffRowNameCoulumn().size();
+	    	System.out.println(countBefore);
 	    	staff.getSaveButton().click();
-	    	wait = new WebDriverWait(testContext.getWebDriverManager().getDriver(), 10);
-	    // wait.until(ExpectedConditions.)
-	    // wait(10);
+	    	
+	    	testContext.getWebDriverManager().getExplicitWaitForElement(staff.getCreateStaffButton(), "visibility");
+	    	
 	    }
 	    else if(entity.equals("Branch")){
 	    	branch.getCreateBranchButton().click();
-	    	branch.getFormInputName().sendKeys("ComputerScience");
-	    	branch.getFormInputBranch().sendKeys("CSE");
-	    	branch.getSaveButton().click();
-	    	wait = new WebDriverWait(testContext.getWebDriverManager().getDriver(), 10);
+	    	testContext.getWebDriverManager().getExplicitWaitForElement(branch.getCancelButton(), "visibility");
+	    	
+	    	branch.getFormInputName().sendKeys(name);
+	    	}
+	}
+
+	@When("^Branch Code \"([^\"]*)\"$")
+	public void branch_Code(String code) throws Throwable {
+		branch.getFormInputBranch().sendKeys(code);
+		countBefore = branch.getBranchRowNameColumn().size();
+		System.out.println(countBefore);
+		branch.getSaveButton().click();
+    	testContext.getWebDriverManager().getExplicitWaitForElement(branch.getCreateBranchButton(), "visibility");
+    
+	}
+	
+	@Then("^User should be able to see the created entry in the ([^\"]*) list with name \"([^\"]*)\"$")
+	public void user_should_be_able_to_see_the_created_entry(String entity,String name) throws Throwable {
+	   
+		
+		if(entity.equals("Staff")){
+			countAfter = staff.getStaffRowNameCoulumn().size();
+			System.out.println(countAfter);
+			Assert.assertTrue(countAfter>countBefore);
+		  } 
+	    else if(entity.equals("Branch")){
+	    	countAfter = branch.getBranchRowNameColumn().size();
+	    	System.out.println(countAfter);
+	    	Assert.assertTrue(countAfter>countBefore);
+	     }
+	}
+	
+	/// Negative Cases for Create Entity
+	
+	@Given("^User selects \"([^\"]*)\" Menu$")
+	public void user_selects_Menu(String entityoption) throws Throwable {
+		if(entityoption.equals("Staff")){
+			home.getListItemStaffFromEntitiesMenu().click();
+			testContext.getWebDriverManager().getExplicitWaitForElement(staff.getCreateStaffButton(), "visibility");
+			}
+			else if(entityoption.equals("Branch")){
+			home.getListItemBranchFromEntitiesMenu().click();
+			testContext.getWebDriverManager().getExplicitWaitForElement(branch.getCreateBranchButton(), "visibility");
+			}
+	   
+	}
+
+	@When("^User creates a new \"([^\"]*)\" entry with name \"([^\"]*)\"$")
+	public void user_creates_a_new_entry_with_name(String entity, String name) throws Throwable {
+		if(entity.equals("Staff")){
+	    	staff.getCreateStaffButton().click();
+	    	testContext.getWebDriverManager().getExplicitWaitForElement(staff.getSaveButton(), "visibility");
+	    	staff.getFormInputName().sendKeys(name);
+	    	
+	    	countBefore = staff.getStaffRowNameCoulumn().size();
+	    	System.out.println(countBefore);
+	    	staff.getSaveButton().click();
+	    	testContext.getWebDriverManager().getExplicitWaitForElement(staff.getSaveButton(), "invisibility");
+	    }
+	    else if(entity.equals("Branch")){
+	    	branch.getCreateBranchButton().click();
+	    	testContext.getWebDriverManager().getExplicitWaitForElement(branch.getSaveButton(), "visibility");
+	    	branch.getFormInputName().sendKeys(name);
+	    	countBefore = branch.getBranchRowNameColumn().size();
+			branch.getFormInputBranch().sendKeys("CSE");
+			countBefore = branch.getBranchRowNameColumn().size();
+			System.out.println(countBefore);
+			branch.getSaveButton().click();
+	    	testContext.getWebDriverManager().getExplicitWaitForElement(branch.getSaveButton(), "invisibility");
+	    
 	    }
 	}
 
-	@Then("^User should be able to see the created entry in the ([^\"]*) list$")
-	public void user_should_be_able_to_see_the_created_entry(String entity) throws Throwable {
-	    if(entity.equals("Staff")){
-		int count = staff.getStaffRowNameCoulumn().size();
-	    boolean flag = true;
-	    for(int i=0;i<count;i++){
-	    	//System.out.println(staff.getStaffTableRows().get(i).getText());
-	    	
-	    	}
-	    } 
-	    else if(entity.equals("Branch")){
-	    	int count = branch.getBranchRowNameColumn().size();
-		    boolean flag = true;
-		    for(int i=0;i<count;i++){
-		    //	System.out.println(branch.getBranchTableRows().get(i).getText());
-		    	
-		    }
+	@When("^Clicks on Cancel Button for \"([^\"]*)\"$")
+	public void clicks_on_Cancel_Button(String entity) throws Throwable {
+		if(entity.equals("Staff")){
+	    	staff.getCancelButton().click();
+	    		
 	    }
+	    else if(entity.equals("Branch")){
+	    	branch.getCancelButton().click();
+	    }
+	   
 	}
+	
+	@Then("^User should not see the cancelled entry for respective \"([^\"]*)\"$")
+	public void user_should_not_see_the_cancelled_entry_for_respective(String entity) throws Throwable {
+		if(entity.equals("Staff")){
+			countAfter = staff.getStaffRowNameCoulumn().size();
+			System.out.println(countAfter);
+			Assert.assertTrue(countAfter==countBefore);
+		  } 
+	    else if(entity.equals("Branch")){
+	    	countAfter = branch.getBranchRowNameColumn().size();
+	    	System.out.println(countAfter);
+	    	Assert.assertTrue(countAfter==countBefore);
+	     }
+	}
+	
+
+	@When("^User enters the name as \"([^\"]*)\"$")
+	public void user_enters_the_name_as(String arg1) throws Throwable {
+	    
+	   
+	}
+
+	@Then("^User should receive \"([^\"]*)\"$")
+	public void user_should_receive(String arg1) throws Throwable {
+	    
+	   
+	}
+	
+	
+	
 	//Edit Scenario
 	@When("^User clicks on Edit Button for ([^\"]*)$")
 	public void user_clicks_on_Edit_Button(String entity) throws Throwable {
@@ -196,7 +296,7 @@ public class StepDefinitionEntities {
 	  				 }
 			  
 				  }
-			 testContext.getWebDriverManager().closeBrowser();
+			 
 	    }
 	}
 	
@@ -231,6 +331,7 @@ public class StepDefinitionEntities {
 				  }
 	    }
 	}
+	
 	@When("^User opens Settings from Account menu$")
 	public void user_opens_Settings_from_Account_menu() throws Throwable {
 	    
@@ -241,5 +342,123 @@ public class StepDefinitionEntities {
 	    
 	}
 	
-	
+	//E2E
+
+	@Then("^User should be able to see the created entry in the \"([^\"]*)\" list with name \"([^\"]*)\"$")
+	public void user_should_be_able_to_see_the_created_entry_in_the_list_with_name(String entity, String name) throws Throwable {
+		if(entity.equals("Staff")){
+			
+			countAfter = staff.getStaffRowNameCoulumn().size();
+			System.out.println(countAfter);
+			Assert.assertTrue(countAfter>countBefore);
+		  } 
+	    else if(entity.equals("Branch")){
+	    	countAfter = branch.getBranchRowNameColumn().size();
+	    	System.out.println(countAfter);
+	    	Assert.assertTrue(countAfter>countBefore);
+	     }
+   
+	}
+
+	@When("^User clicks on View Button for \"([^\"]*)\"$")
+	public void user_clicks_on_View_Button_for(String arg1) throws Throwable {
+	   
+	   
+	}
+
+	@Then("^User should be able to see the specific \"([^\"]*)\" with name \"([^\"]*)\"$")
+	public void user_should_be_able_to_see_the_specific_with_name(String entity, String name) throws Throwable {
+		if(entity.equals("Staff")){
+			 int count = staff.getStaffRowNameCoulumn().size();
+	    	 System.out.println(count);
+	    	 System.out.println(staff.getStaffRowNameCoulumn().get(count - 1).getText());
+			  staff.getViewStaffButton().get(count-1).click();
+	    	/* for(int i=0;i<count;i++){
+				   if(staff.getStaffRowNameCoulumn().get(i).getText().equals(name)){
+					   System.out.println("inside loop");
+				   staff.getViewStaffButton().get(i).click();
+				   break;
+				   }
+			   }*/
+	    	 //Assert.assertTrue(staff.getStaffViewFormName().getAttribute("value").contains(name));  
+			 staff.getBackButtonOnViewForm().click();
+			   
+	    }
+	    else if(entity.equals("Branch")){
+	    	
+	    	 int count = branch.getBranchRowNameColumn().size();
+	    	    for(int i=0;i<count;i++){
+				   	if(branch.getBranchRowNameColumn().get(i).getText().equals(name)){
+				    branch.getViewBranchButton().get(i).click();
+				    Assert.assertTrue(branch.getBranchViewFormName().getAttribute("value").equals(name));  
+				    branch.getBackButtonOnViewForm().click();
+				   }
+			  
+				  }
+			 
+	    }
+	   
+	}
+
+@When("^User clicks on Edit Button for \"([^\"]*)\"$")
+public void user_clicks_on_Edit_Button_for(String arg1) throws Throwable {
+   
+   
 }
+
+@Then("^User should be able to edit the specific \"([^\"]*)\" with name \"([^\"]*)\"$")
+public void user_should_be_able_to_edit_the_specific_with_name(String arg1, String arg2) throws Throwable {
+   
+   
+}
+
+@Then("^User should be able to Delete the specific \"([^\"]*)\" with name \"([^\"]*)\"$")
+public void user_should_be_able_to_Delete_the_specific_with_name(String entity, String name) throws Throwable {
+	 if(entity.equals("Staff")){
+		 int countBeforeDelete = staff.getStaffRowNameCoulumn().size();
+		 System.out.println("Delete Count ="+countBeforeDelete);
+		 System.out.println("Delete Name="+staff.getStaffRowNameCoulumn().get(countBeforeDelete-1).getText());
+		 staff.getDeleteStaffButton().get(countBeforeDelete-1).click();
+		 testContext.getWebDriverManager().getExplicitWaitForElement(staff.getDeleteConfirmation(), "visibility");
+		 staff.getDeleteConfirmation().click();
+		/* for(int i=0;i<countBeforeDelete;i++){
+ 	    	 if(staff.getStaffRowNameCoulumn().get(i).getText().equals(name)){
+ 	    		System.out.println("Delete Name="+staff.getStaffRowNameCoulumn().get(i).getText());
+				System.out.println(name);  
+ 	    		staff.getDeleteStaffButton().get(i).click();
+				   testContext.getWebDriverManager().getExplicitWaitForElement(staff.getDeleteConfirmation(), "visibility");
+				   staff.getDeleteConfirmation().click();
+				   
+				   testContext.getWebDriverManager().getExplicitWaitForElement(staff.getDeleteConfirmation(), "invisibility");
+				   break;
+ 	    	 }*/
+ 	    	 int countAfterDelete = staff.getStaffRowNameCoulumn().size();
+ 	    	 System.out.println("After delete count="+countAfterDelete);
+ 	    	 Assert.assertTrue(countBeforeDelete>countAfterDelete);  
+			   
+			//  }
+	    }
+	    else if(entity.equals("Branch")){
+	    	 int count = branch.getBranchRowNameColumn().size();
+	    	    for(int i=0;i<count;i++){
+	    	    	 if(branch.getBranchRowNameColumn().get(i).getText().equals(name)){
+	  				   branch.getDeleteBranchButton().get(i).click();
+	  				   wait = new WebDriverWait(testContext.getWebDriverManager().getDriver(), 10);
+	  				   wait.until(ExpectedConditions.visibilityOf(branch.getDeleteConfirmation()));
+	  				   branch.getDeleteConfirmation().click();
+	  				   
+	  				   wait.until(ExpectedConditions.invisibilityOf(branch.getDeleteConfirmation()));
+	  				  
+	  				   Assert.assertFalse(branch.getBranchRowNameColumn().get(i).getText().equals(name));  
+	  				 }
+			  
+				  }
+	    }
+	}
+   
+}
+
+
+	
+	
+

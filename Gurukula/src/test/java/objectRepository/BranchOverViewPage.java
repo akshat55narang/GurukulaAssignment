@@ -27,7 +27,7 @@ public class BranchOverViewPage {
 	@FindBy(xpath="//button[@class='btn btn-info']")
 	private WebElement buttonSearchBranch;
 	
-	@FindAll(value = { @FindBy(xpath="//*[text()='View']")})
+	@FindAll(value = { @FindBy(xpath="//button[contains(@href,'branch')]")})
 	private List<WebElement> buttonViewBranch;
 	
 	@FindBy(xpath="//*[text()='Edit']")

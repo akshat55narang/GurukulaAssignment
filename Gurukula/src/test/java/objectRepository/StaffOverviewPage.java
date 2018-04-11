@@ -72,6 +72,10 @@ public class StaffOverviewPage {
 	@FindBy(xpath="//*[text()='Back']")
 	private WebElement buttonViewFormBack;
 	
+	@FindBy(xpath="//*[@class='btn btn-danger']")
+	private WebElement buttonDeleteConfirmation;
+	
+	
 	public WebElement getCreateStaffButton(){
 		return buttonCreateStaff;
 	}
@@ -142,5 +146,9 @@ public class StaffOverviewPage {
 
 	public WebElement getBackButtonOnViewForm(){
 		return buttonViewFormBack;
+	}
+
+	public WebElement getDeleteConfirmation(){
+		return buttonDeleteConfirmation;
 	}
 }

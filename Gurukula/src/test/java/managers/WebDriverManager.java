@@ -68,6 +68,7 @@ public class WebDriverManager {
 	
 	public WebDriverWait getExplicitWaitForElement(WebElement element,String waitType){
 		Long explicitWait = ConfigFileManager.getInstance().getConfiguration().getExplicitWait();
+		System.out.println("Explicit Wait = "+explicitWait);
 		
 		wait = new WebDriverWait(getDriver(), explicitWait);
 		if(waitType.equals("visibility")){
@@ -82,7 +83,7 @@ public class WebDriverManager {
 			return wait;
 		}
 		
-		else { throw new RuntimeException("Wait Type is not Supported");}
+		else { throw new RuntimeException("Wait "+waitType+" Type is not Supported");}
 	
 		
 	}

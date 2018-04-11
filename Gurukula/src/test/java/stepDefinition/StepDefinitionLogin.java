@@ -55,10 +55,8 @@ public class StepDefinitionLogin {
 	
 	@Given("^User clicks on Login Button$")
 	public void user_clicks_on_Login_Button() throws Throwable {
-		//page = new PageObjectManager(driver);
-		//home = page.getHomePage();
-		///login = page.getLoginPage();
 		home.getLoginButton().click();
+		testContext.getWebDriverManager().getExplicitWaitForElement(login.getAuthenticationButton(), "visibility");
 	}
 
 	@When("^User enters valid \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -72,8 +70,7 @@ public class StepDefinitionLogin {
 		String userType = "admin";
 		login.getAuthenticationButton().click();
 		Assert.assertTrue(login.getAuthenticationSuccessMessage().getText().equals("You are logged in as user \""+userType+"\"."));
-		testContext.getWebDriverManager().closeBrowser();
-	}
+		}
 
 	
 	@When("^User enters invalid \"([^\"]*)\" or invalid \"([^\"]*)\"$")
@@ -87,7 +84,7 @@ public class StepDefinitionLogin {
 	public void user_should_not_be_able_to_Login() throws Throwable {
 		login.getAuthenticationButton().click();
 		Assert.assertEquals("Authentication failed! Please check your credentials and try again.", login.getAuthenticationFailureMessage().getText());
-		testContext.getWebDriverManager().closeBrowser();
+		
 	}
 
 	@Given("^User enters valid credentials$")
@@ -99,14 +96,9 @@ public class StepDefinitionLogin {
 
 	@Given("^User is able to login to the Application$")
 	public void user_is_able_to_login_to_the_Application() throws Throwable {
-	    try {
-			login.getAuthenticationButton().click();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	    wait = new WebDriverWait(testContext.getWebDriverManager().getDriver(), 20);
-	    wait.until(ExpectedConditions.elementToBeClickable(home.getAccountMenu()));
+	   login.getAuthenticationButton().click();
+	   testContext.getWebDriverManager().getExplicitWaitForElement(login.getAuthenticationSuccessMessage(), "visibility");
+	   
 	}
 
 	@When("^User opens Account Menu$")
@@ -133,7 +125,7 @@ public class StepDefinitionLogin {
 	public void user_should_be_able_to_logout_of_the_application() throws Throwable {
 		
 		Assert.assertTrue(home.getLoginButton().isDisplayed());
-		testContext.getWebDriverManager().closeBrowser();
+		
 		
 		
 	}
@@ -141,6 +133,7 @@ public class StepDefinitionLogin {
 	@When("^User clicks on /Did you forget your password\\?/$")
 	public void user_clicks_on_Did_you_forget_your_password() throws Throwable {
 	    home.getForgotPasswordLink().click();
+	    testContext.getWebDriverManager().getExplicitWaitForElement(passwordreset.getResetPasswordEmail(), "visibility");
 	}
 
 	@When("^enters his email address \"([^\"]*)\"$")
@@ -154,7 +147,7 @@ public class StepDefinitionLogin {
 	public void user_should_receive_the_password_reset_link_in_the_email() throws Throwable {
 	    passwordreset.getResetPasswordButton().click();
 	    Assert.assertEquals("E-Mail address isn't registered! Please check and try again", passwordreset.getFailedResetPasswordMessage().getText());
-	    testContext.getWebDriverManager().closeBrowser();
+	    
 	}
 	
 	@Given("^User clicks on Accounts Menu$")

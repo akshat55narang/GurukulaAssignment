@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources"
 		,glue="stepDefinition"
-		,tags={"@Register,@R1Login,@Login,@Logout"}
+		,tags={"@E2E"}
 		//,dryRun=true
 		
 		)

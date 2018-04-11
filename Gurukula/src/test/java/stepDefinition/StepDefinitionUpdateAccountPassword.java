@@ -25,10 +25,7 @@ public class StepDefinitionUpdateAccountPassword {
 		
 	}
 	
-	@Before
-	public void before(){
-		
-	}
+	
 	
 	
 	@Given("^User opens Password Menu$")
@@ -79,8 +76,5 @@ public class StepDefinitionUpdateAccountPassword {
 	    }
 	}
 
-	@After
-	public void close_browser(){
-		testContext.getWebDriverManager().closeBrowser();
-	}
+	
 }
