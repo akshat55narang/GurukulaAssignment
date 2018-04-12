@@ -1,7 +1,10 @@
 package objectRepository;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -38,6 +41,9 @@ public class UpdateAccountSettingsPage {
 	//Unhidden element 
 	@FindBy(xpath="//*[@class='help-block ng-scope']")
 	private WebElement messageMaxCharacters;
+	
+	@FindAll(value = { @FindBy(xpath="//*[@class='help-block ng-scope']") })
+	private List<WebElement> messageFailureChecks;
 	
 	//alert alert-danger ng-scope
 	@FindBy(xpath="//*[@class='alert alert-success ng-scope']")
@@ -85,5 +91,9 @@ public class UpdateAccountSettingsPage {
 	
 	public WebElement getSaveFailureMessage(){
 		return messageFailure;
+	}
+	
+	public List<WebElement> getFailureChecks(){
+		return messageFailureChecks;
 	}
 }

@@ -38,6 +38,10 @@ public class UpdateAccountPasswordPage {
 	@FindBy(xpath="//*[@class='alert alert-danger ng-scope']")
 	private WebElement messagePasswordMismatch;
 	
+	//form[@name='form']/div[2]/div/p[@class='help-block ng-scope']"
+	@FindBy(xpath="//form[@name='form']/div[2]/div/p[@class='help-block ng-scope']")
+	private WebElement messageConfirmPassword;
+	
 	public WebElement getNewPasswordInput(){
 		return inputNewPassword;
 	}
@@ -66,5 +70,8 @@ public class UpdateAccountPasswordPage {
 		return messagePasswordMismatch;
 	}
 	
+	public WebElement getConfirmPasswordErrorMessage(){
+		return messageConfirmPassword;
+	}
 
 }

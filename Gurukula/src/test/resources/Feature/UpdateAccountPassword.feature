@@ -27,7 +27,7 @@ Examples:
 	|abc|Your password is required to be at least 5 characters.|
 	|adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa|Your password cannot be longer than 50 characters.|
 
-@UpdatePassword
+@UpdatePassword1
 Scenario Outline: Verify whether user receives a message when password confirmation is less than 5 characters
 When User enters matching Confirmation Password as "<confirmation_password>"
 Then User should receive an error message "<errormessage>"

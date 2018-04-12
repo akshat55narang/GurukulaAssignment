@@ -68,7 +68,7 @@ public class WebDriverManager {
 	
 	public WebDriverWait getExplicitWaitForElement(WebElement element,String waitType){
 		Long explicitWait = ConfigFileManager.getInstance().getConfiguration().getExplicitWait();
-		System.out.println("Explicit Wait = "+explicitWait);
+		//System.out.println("Explicit Wait = "+explicitWait);
 		
 		wait = new WebDriverWait(getDriver(), explicitWait);
 		if(waitType.equals("visibility")){
@@ -100,12 +100,5 @@ public class WebDriverManager {
 		}
 	}
 	
-	public static void main(String []args) throws InterruptedException{
-	WebDriverManager web = new WebDriverManager();
-	web.openBrowser();
 	
-
-	
-	}
-
 }

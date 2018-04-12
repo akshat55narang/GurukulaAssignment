@@ -9,7 +9,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources"
 		,glue="stepDefinition"
-		,tags={"@E2E"}
+		//,plugin={"pretty" , "html:/home/akshat/Documents/report.html"}
+		,tags={"@UpdatePassword1"}
 		//,dryRun=true
 		
 		)

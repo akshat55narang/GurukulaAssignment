@@ -64,24 +64,24 @@ public class StepDefinitionUpdateAccountSettings {
 		if(email.equals("adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa@test.com")){
 	    	emailaddress.clear();
 	    	emailaddress.sendKeys(email);
-	    	System.out.println(updateaccountsettings.getLessCharactersErrorMessage().getText());
+	    	//System.out.println(updateaccountsettings.getLessCharactersErrorMessage().getText());
 	    }
 	    else if(email.equals("a@c")){
 	    	emailaddress.clear();
 	    	emailaddress.sendKeys(email);
-	    	System.out.println(updateaccountsettings.getLessCharactersErrorMessage().getText());
+	    	//System.out.println(updateaccountsettings.getLessCharactersErrorMessage().getText());
 	    }
 	    else if(email.equals("a")){
 	    	emailaddress.clear();
 	    	emailaddress.sendKeys(email);
-	    	System.out.println(updateaccountsettings.getLessCharactersErrorMessage().getText());
+	    	//System.out.println(updateaccountsettings.getLessCharactersErrorMessage().getText());
 	    }
 	}
 	
 	@Then("^User should receive an error message for email \"([^\"]*)\"$")
 	public void user_should_receive_an_error_message_for_email(String error) throws Throwable {
-	    if(error.equals("Your e-mail is required to be at least 5 characters.")){
-	    	Assert.assertTrue(updateaccountsettings.getLessCharactersErrorMessage().getText().equals("Your e-mail is required to be at least 5 characters."));
+	    if(error.equals("Your e-mail cannot be longer than 50 characters.")){
+	    	Assert.assertTrue(updateaccountsettings.getFailureChecks().size()!=0);
 	    }
 	    else if(error.equals("Your e-mail is invalid.")){
 	    	Assert.assertTrue(updateaccountsettings.getLessCharactersErrorMessage().getText().equals("Your e-mail is invalid."));

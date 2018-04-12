@@ -32,7 +32,7 @@ public class StaffOverviewPage {
 	@FindBy(xpath="//*[text()='Edit']")
 	private List<WebElement> buttonEditStaff;
 	
-	@FindBy(xpath="//*[text()='Delete']")
+	@FindBy(xpath="//button[@class='btn btn-danger btn-sm']/span[@class='ng-scope']")
 	private List<WebElement> buttonDeleteStaff;
 	
 	@FindBy(linkText="<<")
@@ -75,6 +75,9 @@ public class StaffOverviewPage {
 	@FindBy(xpath="//*[@class='btn btn-danger']")
 	private WebElement buttonDeleteConfirmation;
 	
+	//class="help-block ng-scope"
+	@FindAll(value = { @FindBy(xpath="//p[@class='help-block ng-scope']") })
+	private List<WebElement> messageFailureChecks; 
 	
 	public WebElement getCreateStaffButton(){
 		return buttonCreateStaff;
@@ -150,5 +153,10 @@ public class StaffOverviewPage {
 
 	public WebElement getDeleteConfirmation(){
 		return buttonDeleteConfirmation;
+	}
+	
+	//getStaffFailureChecks
+	public List<WebElement> getStaffFailureChecks(){
+		return messageFailureChecks;
 	}
 }

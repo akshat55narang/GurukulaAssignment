@@ -65,10 +65,10 @@ public class StepDefinitionUpdateAccountPassword {
 	    	org.junit.Assert.assertEquals(errormessage, updateaccountpassword.getNewPasswordMaximumCharErrorMessage().getText());
 	    }
 	    else if (errormessage.equals("Your confirmation password is required to be at least 5 characters.") ){
-	    	org.junit.Assert.assertEquals(errormessage, updateaccountpassword.getNewPasswordLeastCharErrorMessage().getText());
+	    	org.junit.Assert.assertEquals(errormessage, updateaccountpassword.getConfirmPasswordErrorMessage().getText());
 	    }
 	    else if (errormessage.equals("Your confirmation password cannot be longer than 50 characters.") ){
-	    	org.junit.Assert.assertEquals(errormessage, updateaccountpassword.getNewPasswordMaximumCharErrorMessage().getText());
+	    	org.junit.Assert.assertEquals(errormessage, updateaccountpassword.getConfirmPasswordErrorMessage().getText());
 	    }
 	    else if (errormessage.equals("The password and its confirmation do not match!")){
 	    	//The password and its confirmation do not match!

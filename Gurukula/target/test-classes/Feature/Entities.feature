@@ -13,20 +13,23 @@ Scenario: Verify whether user is able to view Branch and Staff in the Entities M
 When User clicks on Entities Menu 
 Then User should be able to view Branch and Staff values in the Entity list
 
-@CreateStaff
-Scenario: Verify whether user is able to create new staff entry 
+@E2E
+Scenario Outline: Verify whether user is able to create new Branch entry 
 And User opens Entities Menu
-And User selects Staff Menu
-When User creates a new Staff entry with name "Akshat Narang"
-Then User should be able to see the created entry in the Staff list with name "Akshat Narang"
+And User selects "<entity>" Menu
+When User creates a new "<entity>" entry with name "<name>"
+Then User should be able to see the created entry in the "<entity>" list with name "<name>"
+When User clicks on View Button for "<entity>"
+Then User should be able to see the specific "<entity>" with name "<name>"
+When User clicks on Edit Button for "<entity>"
+Then User should be able to edit the specific "<entity>" having "<name>" with name "<editedname>"
+When User clicks on Delete Button for "<entity>"
+Then User should be able to Delete the specific "<entity>" with name "<editedname>"
+Examples:
+	|entity|name|editedname|
+	|Branch|Computer Science|Electronics|
+	|Staff|Akshat Narang|TestStaff|
 
-@CreateBranch
-Scenario: Verify whether user is able to create new Branch entry 
-And User opens Entities Menu
-And User selects Branch Menu
-When User creates a new Branch entry with name "Computer Science"
-And Branch Code "CSE"
-Then User should be able to see the created entry in the Branch list with name "Computer Science"
 
 @Negative
 Scenario Outline: Verify whether a Branch or Staff entry is not created when Cancel Button is pressed 
@@ -40,62 +43,49 @@ Examples:
 	|Branch|Computer Science|
 	|Staff|Akshat Narang|
 
-@E2E
-Scenario Outline: Verify whether user is able to create new Branch entry 
+@NegativeCreate
+Scenario Outline: Verify whether a user receives an error message when the Branch or Staff name is not in expected format 
 And User opens Entities Menu
 And User selects "<entity>" Menu
-When User creates a new "<entity>" entry with name "<name>"
-Then User should be able to see the created entry in the "<entity>" list with name "<name>"
-When User clicks on View Button for "<entity>"
-Then User should be able to see the specific "<entity>" with name "<name>"
-#When User clicks on Edit Button for "<entity>"
-#Then User should be able to edit the specific "<entity>" with name "<edited name>"
-When User clicks on Delete Button for Branch
-Then User should be able to Delete the specific "<entity>" with name "<edited name>"
+When User clicks on create "<entity>" entry with name "<name>"
+Then User should receive an error message "<errormessage>" for the incorrect name format for the respective "<entity>"
 Examples:
-	|entity|name|edited_name|
-	#|Branch|Computer Science|Electronics|
-	|Staff|Akshat Narang|TestStaff|
+	|entity|name|errormessage|
+	|Staff|Akshat Narang|This field is required.|
+	|Staff|aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa|This field cannot be longer than 50 characters.|
+	|Staff|Akshat1Narang|This field should follow pattern ^[a-zA-Z\\s]*$.|
+	#|Staff|Akshat Narang|This field should follow pattern ^[a-zA-Z\\s]*$.|
 
-@ViewBranch
-Scenario: Verify whether user is able to view a specific Branch
-When User clicks on Entities Menu 
-And User clicks on Branch Entity
-And User clicks on View Button for Branch
-Then User should be able to see the specific Branch with name "Computer Science"
+@Search
+Scenario Outline: Verify whether a user receives an error message when the Branch or Staff name is not in expected format 
+And User opens Entities Menu
+And User selects "<entity>" Menu
+When User searches for a "<entity>" using "<name>"
+Then User should be able to view a list of all the matching results
+Examples:
+	|entity|name|
+	|Branch|Computer Science|
+	|Staff|Akshat Narang|
 
+@Search
+Scenario Outline: Verify whether a user receives an error message when the Branch or Staff name is not in expected format 
+And User opens Entities Menu
+And User selects "<entity>" Menu
+When User searches for a "<entity>" using "<id>"
+Then User should be able to view a list of all the matching results
+Examples:
+	|entity|name|
+	|Branch|1|
+	|Staff|1|
+	
+@Search
+Scenario Outline: Verify whether a user receives an error message when the Branch or Staff name is not in expected format 
+And User opens Entities Menu
+And User selects "<entity>" Menu
+When User searches for a "<entity>" using "<code>"
+Then User should be able to view a list of all the matching results
+Examples:
+	|entity|code|
+	|Branch|CSE|
+	|Staff||
 
-@ViewStaff
-Scenario: Verify whether user is able to view a specific Staff
-When User clicks on Entities Menu 
-And User clicks on Staff Entity
-And User clicks on View Button for Staff
-Then User should be able to see the specific Staff with name "Akshat Narang"
-
-@EditBranch
-Scenario: Verify whether user is able to edit a specific Branch
-When User clicks on Entities Menu 
-And User clicks on Branch Entity
-And User clicks on Edit Button for Branch
-Then User should be able to edit the specific Branch with name "Computer Science"
-
-@EditStaff
-Scenario: Verify whether user is able to edit a specific Staff
-When User clicks on Entities Menu 
-And User clicks on Staff Entity
-And User clicks on Edit Button for Staff
-Then User should be able to edit the specific Staff with name "akshat narang"
-
-@DeleteBranch
-Scenario: Verify whether user is able to delete a specific Branch
-When User clicks on Entities Menu 
-And User clicks on Branch Entity
-And User clicks on Delete Button for Branch
-Then User should be able to Delete the specific Branch with name "Computer Science"
-
-@DeleteStaff
-Scenario: Verify whether user is able to delete a specific Staff
-When User clicks on Entities Menu 
-And User clicks on Staff Entity
-And User clicks on Delete Button for Staff
-Then User should be able to Delete the specific Staff with name "akshat narang"

@@ -26,7 +26,7 @@ public class StepDefinitionGeneric {
 	
 	@After
 	public void close_browser(){
-		//testContext.getWebDriverManager().closeBrowser();
+		testContext.getWebDriverManager().closeBrowser();
 	}
 
 	

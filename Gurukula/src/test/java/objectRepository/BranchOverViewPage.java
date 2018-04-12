@@ -33,7 +33,7 @@ public class BranchOverViewPage {
 	@FindBy(xpath="//*[text()='Edit']")
 	private List<WebElement> buttonEditBranch;
 	
-	@FindBy(xpath="//*[text()='Delete']")
+	@FindBy(xpath="//button[@class='btn btn-danger btn-sm']/span[@class='ng-scope']")
 	private List<WebElement> buttonDeleteBranch;
 	
 	@FindBy(linkText="<<")
