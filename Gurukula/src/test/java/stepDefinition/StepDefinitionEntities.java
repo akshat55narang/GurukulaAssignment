@@ -2,15 +2,17 @@ package stepDefinition;
 
 import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.jsoup.nodes.Entities;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import objectRepository.BranchOverViewPage;
-
 import objectRepository.HomePage;
 import objectRepository.StaffOverviewPage;
+import cucumber.Log;
 import cucumber.TestContext;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,7 +28,7 @@ public class StepDefinitionEntities {
 	public BranchOverViewPage branch;
 	private int countBefore;
 	private int countAfter;
-
+	
 	public StepDefinitionEntities(TestContext context) {
 		testContext = context;
 		home = testContext.getPageObjectManager().getHomePage();
@@ -37,6 +39,7 @@ public class StepDefinitionEntities {
 	@When("^User clicks on Entities Menu$")
 	public void user_User_clicks_on_Entities_Menu() throws Throwable {
 		home.getEntitiesMenu().click();
+		Log.info("Click on Entities");
 		wait = new WebDriverWait(testContext.getWebDriverManager().getDriver(),
 				10);
 		wait.until(ExpectedConditions.visibilityOf(home.getEntitiesMenu()));

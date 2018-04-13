@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.xml.DOMConfigurator;
+
 public class ConfigFileReader {
 
 	private Properties prop;
@@ -14,6 +16,7 @@ public class ConfigFileReader {
 	public ConfigFileReader(){
 		String userDirectory = System.getProperty("user.dir");
 		String path = userDirectory+PROP_LOCATION;
+		
 		prop = new Properties();
 		try {
 			fis = new FileInputStream(path);
@@ -27,6 +30,7 @@ public class ConfigFileReader {
 			e.printStackTrace();
 			throw new RuntimeException("Property file not found");
 		}
+		DOMConfigurator.configure(userDirectory+"/src/test/resources/log4j.xml");
 	}
 	
 	public String getApplicationURL(){

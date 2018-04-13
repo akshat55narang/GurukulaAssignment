@@ -18,8 +18,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources"
 		,glue="stepDefinition"
-		//,plugin = { "com.cucumber.listener.ExtentCucumberFormatter:"}
-		,tags={"@E2E"}
+		,plugin = { "com.cucumber.listener.ExtentCucumberFormatter:"}
+		,tags={"@Entitylist"}
 		//,dryRun=true
 		
 		)
