@@ -1,7 +1,10 @@
 package objectRepository;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -42,8 +45,14 @@ public class RegistrationPage {
 	@FindBy(xpath="//form[@name='form']/div[3]/div/p[@class='help-block ng-scope']")
 	private WebElement messageNewPasswordFailure;
 	
+	@FindAll(value = { @FindBy(xpath="") })
+	private List<WebElement> messageFailureChecks;
+	
 	@FindBy(xpath="//form[@name='form']/div[4]/div/p[@class='help-block ng-scope']")
 	private WebElement messageConfirmPasswordFailure;
+	
+	@FindBy(xpath="//div[@class='alert alert-danger ng-scope']")
+	private WebElement messagePasswordMismatch;
 	
 	public WebElement getLoginIdForNewUserRegistration(){
 		return inputNewRegistrationLoginId;
@@ -83,5 +92,13 @@ public class RegistrationPage {
 	
 	public WebElement getPasswordConfirmationFailureMessage(){
 		return messageConfirmPasswordFailure;
+	}
+	
+	public List<WebElement> getMessageFailureChecks(){
+		return messageFailureChecks;
+	}
+	
+	public WebElement getPasswordMismatchMessage(){
+		return messagePasswordMismatch;
 	}
 }

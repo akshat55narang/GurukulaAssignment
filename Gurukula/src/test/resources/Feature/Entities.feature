@@ -5,7 +5,7 @@ Given User opens Application in Browser
 And User clicks on Login Button
 And User enters valid credentials
 		| username  | password  |
-        | admin     | admin     | 
+         | admin     | admin     | 
 And User is able to login to the Application 
 
 @Entitylist
@@ -14,7 +14,7 @@ When User clicks on Entities Menu
 Then User should be able to view Branch and Staff values in the Entity list
 
 @E2E
-Scenario Outline: Verify whether user is able to create new Branch entry 
+Scenario Outline: Verify whether user is able to create new Entity  
 And User opens Entities Menu
 And User selects "<entity>" Menu
 When User creates a new "<entity>" entry with name "<name>"
@@ -28,14 +28,14 @@ Then User should be able to Delete the specific "<entity>" with name "<editednam
 Examples:
 	|entity|name|editedname|
 	|Branch|Computer Science|Electronics|
-	|Staff|Akshat Narang|TestStaff|
+	#|Staff|Akshat Narang|TestStaff|
 
 
 @Negative
 Scenario Outline: Verify whether a Branch or Staff entry is not created when Cancel Button is pressed 
 And User opens Entities Menu
 And User selects "<entity>" Menu
-When User creates a new "<entity>" entry with name "<name>"
+When User clicks on create "<entity>" entry with name "<name>"
 And Clicks on Cancel Button for "<entity>"
 Then User should not see the cancelled entry for respective "<entity>"
 Examples:

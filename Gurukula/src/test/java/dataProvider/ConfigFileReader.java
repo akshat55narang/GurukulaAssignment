@@ -10,7 +10,7 @@ public class ConfigFileReader {
 	private Properties prop;
 	private FileInputStream fis;
 	private static final String PROP_LOCATION = "/src/test/resources/data.properties";
-	
+		
 	public ConfigFileReader(){
 		String userDirectory = System.getProperty("user.dir");
 		String path = userDirectory+PROP_LOCATION;
@@ -27,11 +27,6 @@ public class ConfigFileReader {
 			e.printStackTrace();
 			throw new RuntimeException("Property file not found");
 		}
-	}
-	
-	public static void main(String []args){
-		ConfigFileReader c = new ConfigFileReader();
-		
 	}
 	
 	public String getApplicationURL(){
@@ -74,7 +69,13 @@ public class ConfigFileReader {
 		String wait= prop.getProperty("explicitWait");
 		if(wait!=null){ return Long.parseLong(wait);}
 		else { throw new RuntimeException("Explicit Wait is not set");
-		
 		}
+		}
+		
+	public String getExtentReportPath(){
+		String location = prop.getProperty("extentReportLocation");
+		String path  = System.getProperty("user.dir")+location;
+		if(path!=null){return path;}
+		else{throw new RuntimeException("extent-report location is null");}
 	}
 }

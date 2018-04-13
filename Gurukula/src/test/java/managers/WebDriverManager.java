@@ -52,8 +52,8 @@ public class WebDriverManager {
 		}
 		
 		//driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
 		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
 		
 		return driver;
 	}
