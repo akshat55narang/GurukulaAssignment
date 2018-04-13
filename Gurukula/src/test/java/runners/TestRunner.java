@@ -1,6 +1,15 @@
 package runners;
 
+import java.io.File;
+
+import managers.ConfigFileManager;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
+
+import com.cucumber.listener.ExtentProperties;
+import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -9,11 +18,23 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources"
 		,glue="stepDefinition"
-		,plugin={"pretty" , "html:/home/akshat/Documents/report1.html"}
-		//,tags={"@E2E"}
+		//,plugin = { "com.cucumber.listener.ExtentCucumberFormatter:"}
+		,tags={"@E2E"}
 		//,dryRun=true
 		
 		)
 public class TestRunner {
 
+	@BeforeClass
+	public static void setup() {
+		String path = System.getProperty("user.dir")+"/cucumber-reports/report.html";
+		ExtentProperties extentProperties = ExtentProperties.INSTANCE;
+	    extentProperties.setReportPath(path);
+	}
+	
+	@AfterClass
+	public static void writeExtentReport(){
+		Reporter.loadXMLConfig(new File(ConfigFileManager.getInstance().getConfiguration().getExtentReportPath()));
+	}
+	
 }

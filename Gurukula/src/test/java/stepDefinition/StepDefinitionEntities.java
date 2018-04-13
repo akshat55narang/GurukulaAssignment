@@ -75,14 +75,12 @@ public class StepDefinitionEntities {
 
 		if (entity.equals("Staff")) {
 			int count = staff.getStaffRowNameCoulumn().size();
-			System.out.println(count);
-			System.out.println(staff.getStaffRowNameCoulumn().get(count - 1)
-					.getText());
+			
+			
 
 			for (int i = 0; i < count; i++) {
 				if (staff.getStaffRowNameCoulumn().get(i).getText()
 						.equals(name)) {
-					System.out.println("inside loop");
 					staff.getViewStaffButton().get(i).click();
 					Assert.assertTrue(staff.getStaffViewFormName()
 							.getAttribute("value").contains(name));
@@ -139,7 +137,6 @@ public class StepDefinitionEntities {
 					staff.getCancelButton(), "visibility");
 			staff.getFormInputName().sendKeys(name);
 			countBefore = staff.getStaffRowNameCoulumn().size();
-			System.out.println(countBefore);
 			staff.getSaveButton().click();
 
 			testContext.getWebDriverManager().getExplicitWaitForElement(
@@ -158,7 +155,6 @@ public class StepDefinitionEntities {
 	public void branch_Code(String code) throws Throwable {
 		branch.getFormInputBranch().sendKeys(code);
 		countBefore = branch.getBranchRowNameColumn().size();
-		System.out.println(countBefore);
 		branch.getSaveButton().click();
 		testContext.getWebDriverManager().getExplicitWaitForElement(
 				branch.getCreateBranchButton(), "visibility");
@@ -171,11 +167,9 @@ public class StepDefinitionEntities {
 
 		if (entity.equals("Staff")) {
 			countAfter = staff.getStaffRowNameCoulumn().size();
-			System.out.println(countAfter);
 			Assert.assertTrue(countAfter > countBefore);
 		} else if (entity.equals("Branch")) {
 			countAfter = branch.getBranchRowNameColumn().size();
-			System.out.println(countAfter);
 			Assert.assertTrue(countAfter > countBefore);
 		}
 	}
@@ -212,11 +206,9 @@ public class StepDefinitionEntities {
 			String entity) throws Throwable {
 		if (entity.equals("Staff")) {
 			countAfter = staff.getStaffRowNameCoulumn().size();
-			System.out.println(countAfter);
 			Assert.assertTrue(countAfter == countBefore);
 		} else if (entity.equals("Branch")) {
 			countAfter = branch.getBranchRowNameColumn().size();
-			System.out.println(countAfter);
 			Assert.assertTrue(countAfter == countBefore);
 		}
 	}
@@ -240,42 +232,7 @@ public class StepDefinitionEntities {
 		}
 	}
 
-	/*
-	 * @Then(
-	 * "^User should be able to edit the specific ([^\"]*) with name \"([^\"]*)\"$"
-	 * ) public void user_should_be_able_to_edit_the_specific_Entity(String
-	 * entity, String name) throws Throwable { if (entity.equals("Staff")) { int
-	 * count = staff.getStaffRowNameCoulumn().size(); System.out.println(count);
-	 * for (int i = 0; i < count; i++) { if
-	 * (staff.getStaffRowNameCoulumn().get(i).getText() .equals(name)) {
-	 * staff.getEditStaffButton().get(i).click(); wait = new
-	 * WebDriverWait(testContext.getWebDriverManager() .getDriver(), 10);
-	 * wait.until(ExpectedConditions.visibilityOf(staff .getFormInputName()));
-	 * staff.getFormInputName().sendKeys("Test"); staff.getSaveButton().click();
-	 * 
-	 * wait.until(ExpectedConditions.invisibilityOf(staff .getSaveButton()));
-	 * 
-	 * Assert.assertFalse(staff.getStaffRowNameCoulumn().get(i)
-	 * .getText().equals(name)); } } } else if (entity.equals("Branch")) { int
-	 * count = branch.getBranchRowNameColumn().size(); for (int i = 0; i <
-	 * count; i++) { if (branch.getBranchRowNameColumn().get(i).getText()
-	 * .equals(name)) { branch.getEditBranchButton().get(i).click(); wait = new
-	 * WebDriverWait(testContext.getWebDriverManager() .getDriver(), 10);
-	 * wait.until(ExpectedConditions.visibilityOf(branch .getFormInputName()));
-	 * branch.getFormInputName().sendKeys("Test");
-	 * branch.getSaveButton().click();
-	 * 
-	 * wait.until(ExpectedConditions.invisibilityOf(branch .getSaveButton()));
-	 * 
-	 * Assert.assertFalse(branch.getBranchRowNameColumn().get(i)
-	 * .getText().equals(name)); }
-	 * 
-	 * }
-	 * 
-	 * } }
-	 */
-	// Negative Cases for Edit
-
+	
 	// Delete Entity
 	@When("^User clicks on Delete Button for \"([^\"]*)\"$")
 	public void user_clicks_on_Delete_Button_for_Staff(String entity)
@@ -283,29 +240,7 @@ public class StepDefinitionEntities {
 
 	}
 
-	/*
-	 * @Then(
-	 * "^User should be able to Delete the specific ([^\"]*) with name \"([^\"]*)\"$"
-	 * ) public void user_should_be_able_to_Delete_the_specific_Staff_with_name(
-	 * String entity, String name) throws Throwable { if
-	 * (entity.equals("Staff")) {
-	 * 
-	 * } else if (entity.equals("Branch")) { int count =
-	 * branch.getBranchRowNameColumn().size(); for (int i = 0; i < count; i++) {
-	 * if (branch.getBranchRowNameColumn().get(i).getText() .equals(name)) {
-	 * branch.getDeleteBranchButton().get(i).click(); wait = new
-	 * WebDriverWait(testContext.getWebDriverManager() .getDriver(), 10);
-	 * wait.until(ExpectedConditions.visibilityOf(branch
-	 * .getDeleteConfirmation())); branch.getDeleteConfirmation().click();
-	 * 
-	 * wait.until(ExpectedConditions.invisibilityOf(branch
-	 * .getDeleteConfirmation()));
-	 * 
-	 * Assert.assertFalse(branch.getBranchRowNameColumn().get(i)
-	 * .getText().equals(name)); }
-	 * 
-	 * } } }
-	 */
+	
 	@When("^User opens Settings from Account menu$")
 	public void user_opens_Settings_from_Account_menu() throws Throwable {
 
@@ -329,7 +264,6 @@ public class StepDefinitionEntities {
 			staff.getFormInputName().sendKeys(name);
 
 			countBefore = staff.getStaffRowNameCoulumn().size();
-			// System.out.println(countBefore);
 			staff.getSaveButton().click();
 			testContext.getWebDriverManager().getExplicitWaitForElement(
 					staff.getSaveButton(), "invisibility");
@@ -342,7 +276,6 @@ public class StepDefinitionEntities {
 			countBefore = branch.getBranchRowNameColumn().size();
 			branch.getFormInputBranch().sendKeys("CSE");
 			countBefore = branch.getBranchRowNameColumn().size();
-			// System.out.println(countBefore);
 			branch.getSaveButton().click();
 			testContext.getWebDriverManager().getExplicitWaitForElement(
 					branch.getSaveButton(), "invisibility");
@@ -356,11 +289,9 @@ public class StepDefinitionEntities {
 		if (entity.equals("Staff")) {
 
 			countAfter = staff.getStaffRowNameCoulumn().size();
-			// System.out.println(countAfter);
 			Assert.assertTrue(countAfter > countBefore);
 		} else if (entity.equals("Branch")) {
 			countAfter = branch.getBranchRowNameColumn().size();
-			// System.out.println(countAfter);
 			Assert.assertTrue(countAfter > countBefore);
 		}
 
@@ -376,12 +307,10 @@ public class StepDefinitionEntities {
 			String entity, String name) throws Throwable {
 		if (entity.equals("Staff")) {
 			int count = staff.getStaffRowNameCoulumn().size();
-			System.out.println(count);
-
+			
 			for (int i = 0; i < count; i++) {
 				if (staff.getStaffRowNameCoulumn().get(i).getText()
 						.equals(name)) {
-					System.out.println("true");
 					staff.getViewStaffButton().get(i).click();
 					break;
 				}
@@ -417,12 +346,10 @@ public class StepDefinitionEntities {
 			String entity, String name, String editedname) throws Throwable {
 		if (entity.equals("Staff")) {
 			int edit = staff.getEditStaffButton().size();
-			System.out.println(edit);
-
+			
 			for (int i = 0; i < edit; i++) {
 				if (staff.getStaffRowNameCoulumn().get(i).getText()
 						.equals(name)) {
-					System.out.println("true");
 					staff.getEditStaffButton().get(i).click();
 					testContext.getWebDriverManager()
 							.getExplicitWaitForElement(staff.getCancelButton(),
@@ -446,12 +373,10 @@ public class StepDefinitionEntities {
 		}
 		if (entity.equals("Branch")) {
 			int edit = branch.getEditBranchButton().size();
-			System.out.println(edit);
-
+			
 			for (int i = 0; i < edit; i++) {
 				if (branch.getBranchRowNameColumn().get(i).getText()
 						.equals(name)) {
-					System.out.println("true");
 					branch.getEditBranchButton().get(i).click();
 					testContext.getWebDriverManager()
 							.getExplicitWaitForElement(
@@ -479,21 +404,19 @@ public class StepDefinitionEntities {
 	public void user_should_be_able_to_Delete_the_specific_with_name(
 			String entity, String editedname) throws Throwable {
 
-		// System.out.println(countBeforeDelete);
+		
 		if (entity.equals("Staff")) {
 			int countBeforeDelete = staff.getDeleteStaffButton().size();
 			for (int i = 0; i < countBeforeDelete; i++) {
 				if (staff.getStaffRowNameCoulumn().get(i).getText()
 						.equals(editedname)) {
-					System.out.println("true");
 					staff.getDeleteStaffButton().get(i).click();
 					testContext
 							.getWebDriverManager()
 							.getExplicitWaitForElement(
 									staff.getDeleteConfirmation(), "visibility");
 					staff.getDeleteConfirmation().click();
-					System.out.println("after delete ="
-							+ staff.getEditStaffButton().size());
+					
 					testContext.getWebDriverManager()
 							.getExplicitWaitForElement(staff.getCancelButton(),
 									"invisibility");
@@ -501,25 +424,21 @@ public class StepDefinitionEntities {
 				}
 			}
 
-			int countAfterDelete = staff.getDeleteStaffButton().size();
-			// System.out.println("After delete count=" + countAfterDelete);
+			int countAfterDelete = staff.getStaffRowNameCoulumn().size();
 			Assert.assertTrue(countBeforeDelete > countAfterDelete);
 
-			// }
+			
 		} else if (entity.equals("Branch")) {
 			int countBeforeDelete = branch.getDeleteBranchButton().size();
 			for (int i = 0; i < countBeforeDelete; i++) {
 				if (branch.getBranchRowNameColumn().get(i).getText()
 						.equals(editedname)) {
-					System.out.println("true");
 					branch.getDeleteBranchButton().get(i).click();
 					testContext.getWebDriverManager()
 							.getExplicitWaitForElement(
 									branch.getDeleteConfirmation(),
 									"visibility");
 					branch.getDeleteConfirmation().click();
-					System.out.println("after delete ="
-							+ branch.getEditBranchButton().size());
 					testContext.getWebDriverManager()
 							.getExplicitWaitForElement(
 									branch.getCancelButton(), "invisibility");
@@ -527,8 +446,7 @@ public class StepDefinitionEntities {
 				}
 			}
 
-			int countAfterDelete = branch.getDeleteBranchButton().size();
-			// System.out.println("After delete count=" + countAfterDelete);
+			int countAfterDelete = branch.getBranchRowNameColumn().size();
 			Assert.assertTrue(countBeforeDelete > countAfterDelete);
 
 		}
@@ -555,17 +473,12 @@ public class StepDefinitionEntities {
 	public void user_should_receive_an_error_message_for_the_incorrect_name_format(
 			String message, String entity) throws Throwable {
 		if (entity.equals("Staff")) {
-			System.out.println("In Staff loop");
-			System.out.println(message);
 			int count = staff.getStaffFailureChecks().size();
 			
 			if (message.equals("This field is required.")) {
 				
 				for (int i = 0; i < count; i++) {
 					
-					System.out.println(staff.getStaffFailureChecks().get(i)
-							.getText());
-
 					Assert.assertTrue(staff.getStaffFailureChecks().get(i)
 							.getText().equals(message));
 					break;
@@ -582,9 +495,6 @@ public class StepDefinitionEntities {
 								"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 				for (int i = 0; i < count; i++) {
 
-					System.out.println(staff.getStaffFailureChecks().get(i)
-							.getText());
-
 					Assert.assertTrue(staff.getStaffFailureChecks().get(i)
 							.getText().equals(message));
 					break;
@@ -600,10 +510,6 @@ public class StepDefinitionEntities {
 				staff.getFormInputName().sendKeys("Akshat1Narang");
 				for (int i = 0; i < count; i++) {
 
-					System.out.println(staff.getStaffFailureChecks().get(i)
-							.getText());
-
-					
 					Assert.assertTrue(staff.getStaffFailureChecks().get(i)
 							.getText().equals(message));
 					break;
@@ -618,8 +524,6 @@ public class StepDefinitionEntities {
 				staff.getFormInputName().clear();
 				for (int i = 0; i < count; i++) {
 
-					System.out.println(staff.getStaffFailureChecks().get(i)
-							.getText());
 					if (staff.getStaffFailureChecks().get(i).getText()
 							.equals(message)) {
 						flag = true;
@@ -627,7 +531,6 @@ public class StepDefinitionEntities {
 					}
 				}
 				Assert.assertTrue(flag);
-				System.out.println(message);
 				staff.getCancelButton().click();
 			}
 
@@ -638,8 +541,6 @@ public class StepDefinitionEntities {
 								"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 				for (int i = 0; i < count; i++) {
 
-					System.out.println(staff.getStaffFailureChecks().get(i)
-							.getText());
 					if (staff.getStaffFailureChecks().get(i).getText()
 							.equals(message)) {
 						flag = true;
@@ -648,23 +549,19 @@ public class StepDefinitionEntities {
 				}
 				Assert.assertTrue(flag);
 				staff.getCancelButton().click();
-				System.out.println(message);
-			}
+				}
 
 			else if (message
 					.equals("This field should follow pattern ^[a-zA-Z\\s]*$.")) {
 				staff.getFormInputName().sendKeys("Akshat1Narang");
 				for (int i = 0; i < count; i++) {
 
-					System.out.println(staff.getStaffFailureChecks().get(i)
-							.getText());
 					if (staff.getStaffFailureChecks().get(i).getText()
 							.equals(message)) {
 						flag = true;
 						break;
 					}
 				}
-				System.out.println(message);
 				Assert.assertTrue(flag);
 				staff.getCancelButton().click();
 			}

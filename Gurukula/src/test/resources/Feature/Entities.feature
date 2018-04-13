@@ -28,7 +28,7 @@ Then User should be able to Delete the specific "<entity>" with name "<editednam
 Examples:
 	|entity|name|editedname|
 	|Branch|Computer Science|Electronics|
-	#|Staff|Akshat Narang|TestStaff|
+	|Staff|Akshat Narang|TestStaff|
 
 
 @Negative

@@ -40,14 +40,22 @@ public class WebDriverManager {
 	}
 	
 	public WebDriver openBrowser(){
-			
+		String path = System.getProperty("user.dir");
 		String url = ConfigFileManager.getInstance().getConfiguration().getApplicationURL();
 		String browser = ConfigFileManager.getInstance().getConfiguration().getApplicationBrowser();
-		String chromedriverPath = ConfigFileManager.getInstance().getConfiguration().getChromeDriverPath();
+		String chromeDriverWindows = path+ConfigFileManager.getInstance().getConfiguration().getChromeDriverPathWindows();
+		String chromeDriverLinux = path+ConfigFileManager.getInstance().getConfiguration().getChromeDriverPathLinux();
 		Long implicitWait = Long.parseLong(ConfigFileManager.getInstance().getConfiguration().getimplicitWait());
+		String operatingSystem=ConfigFileManager.getInstance().getConfiguration().getOS();
 		
 		if(browser.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver",chromedriverPath);
+			if(operatingSystem.equals("Linux"))
+			System.setProperty("webdriver.chrome.driver",chromeDriverLinux);
+			driver = new ChromeDriver();
+		}
+		else if(browser.equals("chrome")){
+			if(operatingSystem.equals("Linux"))
+			System.setProperty("webdriver.chrome.driver",chromeDriverWindows);
 			driver = new ChromeDriver();
 		}
 		
