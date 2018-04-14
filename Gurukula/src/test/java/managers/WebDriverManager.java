@@ -20,6 +20,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.Log;
 import dataProvider.ConfigFileReader;
 
 public class WebDriverManager {
@@ -39,6 +40,8 @@ public class WebDriverManager {
 		return (driver==null)? driver = openBrowser():driver;
 	}
 	
+	// Method to Open Browser with the speciifed url
+	
 	public WebDriver openBrowser(){
 		String path = System.getProperty("user.dir");
 		String url = ConfigFileManager.getInstance().getConfiguration().getApplicationURL();
@@ -47,36 +50,45 @@ public class WebDriverManager {
 		String chromeDriverLinux = path+ConfigFileManager.getInstance().getConfiguration().getChromeDriverPathLinux();
 		Long implicitWait = Long.parseLong(ConfigFileManager.getInstance().getConfiguration().getimplicitWait());
 		String operatingSystem=ConfigFileManager.getInstance().getConfiguration().getOS();
-		
+		System.out.println(chromeDriverWindows);
 		if(browser.equals("chrome")){
-			if(operatingSystem.equals("Linux"))
-			System.setProperty("webdriver.chrome.driver",chromeDriverLinux);
+			if(operatingSystem.equals("Linux")){
+				System.setProperty("webdriver.chrome.driver", chromeDriverLinux);
+				Log.info("Opening Browser");
 			driver = new ChromeDriver();
+			}
 		}
 		else if(browser.equals("chrome")){
-			if(operatingSystem.equals("Linux"))
-			System.setProperty("webdriver.chrome.driver",chromeDriverWindows);
+			if(operatingSystem.equals("Windows")){
+				System.setProperty("webdriver.chrome.driver", chromeDriverLinux);
+				Log.info("Opening Browser");
 			driver = new ChromeDriver();
+	}
 		}
 		
 		//driver.manage().window().maximize();
 		driver.get(url);
+		Log.info("Setting Implicit Wait");
 		driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
 		
 		return driver;
 	}
-	
+	// Method to Close Browser
 	public void closeBrowser(){
+		Log.info("Closing Browser");
 		driver.close();
 		
 	}
+	
+	// Method to close all browsers
 	public void closeAllBrowsers(){
+		Log.info("Closing All Browsers");
 		driver.quit();
 	}
 	
+	// Generic Method to generate Explicit Wait , based on the type of wait provided as Argument
 	public WebDriverWait getExplicitWaitForElement(WebElement element,String waitType){
 		Long explicitWait = ConfigFileManager.getInstance().getConfiguration().getExplicitWait();
-		//System.out.println("Explicit Wait = "+explicitWait);
 		
 		wait = new WebDriverWait(getDriver(), explicitWait);
 		if(waitType.equals("visibility")){
@@ -95,14 +107,15 @@ public class WebDriverManager {
 	
 		
 	}
-	
-	public void getScreenShot(){
+	// Method to take screen shot of Web Page.
+	public void getScreenShot(String testcase){
 		File src = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
-		
+		String path = System.getProperty("user.dir");
 		try {
-			FileUtils.copyFile(src,new File("/home/akshat/screenshot.png"));
+			
+			FileUtils.copyFile(src,new File(path+"/screenshots/screenshot"+testcase+".png"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 			throw new RuntimeException("Screenshot location not found");
 		}

@@ -40,14 +40,14 @@ public class StepDefinitionEntities {
 	public void user_User_clicks_on_Entities_Menu() throws Throwable {
 		home.getEntitiesMenu().click();
 		Log.info("Click on Entities");
-		wait = new WebDriverWait(testContext.getWebDriverManager().getDriver(),
-				10);
-		wait.until(ExpectedConditions.visibilityOf(home.getEntitiesMenu()));
+		testContext.getWebDriverManager().getExplicitWaitForElement(home.getEntitiesMenu(), "visibility");
+		
 	}
 
 	@Then("^User should be able to view Branch and Staff values in the Entity list$")
 	public void user_should_be_able_to_view_Branch_and_Staff_values_in_the_Entity_list()
 			throws Throwable {
+		Log.info("Asserting whether branches and staff is displayed in entity menu");
 		Assert.assertEquals(" Branch", home.getEntitiesList().get(0).getText());
 		Assert.assertEquals(" Staff", home.getEntitiesList().get(1).getText());
 
@@ -57,8 +57,11 @@ public class StepDefinitionEntities {
 	@When("^User clicks on ([^\"]*) Entity$")
 	public void user_clicks_on_Menu(String entity) throws Throwable {
 		if (entity.equals("Staff")) {
+			
+			Log.info("Clicking on Staff Button");
 			home.getListItemStaffFromEntitiesMenu().click();
 		} else if (entity.equals("Branch")) {
+			Log.info("Clicking on Branch Button");
 			home.getListItemBranchFromEntitiesMenu().click();
 		}
 	}
@@ -66,7 +69,7 @@ public class StepDefinitionEntities {
 	@When("^User clicks on View Button for ([^\"]*)$")
 	public void user_clicks_on_View_Button(String entity) throws Throwable {
 		if (entity.equals("Staff")) {
-
+			
 		} else if (entity.equals("Branch")) {
 
 		}
@@ -78,12 +81,13 @@ public class StepDefinitionEntities {
 
 		if (entity.equals("Staff")) {
 			int count = staff.getStaffRowNameCoulumn().size();
-			
+			Log.info("Count of Staf names="+count);
 			
 
 			for (int i = 0; i < count; i++) {
 				if (staff.getStaffRowNameCoulumn().get(i).getText()
 						.equals(name)) {
+					Log.info("verifying if a staff entry exists");
 					staff.getViewStaffButton().get(i).click();
 					Assert.assertTrue(staff.getStaffViewFormName()
 							.getAttribute("value").contains(name));
@@ -97,6 +101,7 @@ public class StepDefinitionEntities {
 			for (int i = 0; i < count; i++) {
 				if (branch.getBranchRowNameColumn().get(i).getText()
 						.equals(name)) {
+					Log.info("verifying if a branch entry exists");
 					branch.getViewBranchButton().get(i).click();
 					Assert.assertTrue(branch.getBranchViewFormName()
 							.getAttribute("value").equals(name));
@@ -110,10 +115,8 @@ public class StepDefinitionEntities {
 
 	@Given("^User opens Entities Menu$")
 	public void user_opens_Entities_Menu() throws Throwable {
+		Log.info("Clicking on Entity Menu");
 		home.getEntitiesMenu().click();
-		// wait = new
-		// WebDriverWait(testContext.getWebDriverManager().getDriver(), 10);
-		// wait.until(ExpectedConditions.visibilityOf(home.getListItemBranchFromEntitiesMenu()));
 		testContext.getWebDriverManager().getExplicitWaitForElement(
 				home.getListItemBranchFromEntitiesMenu(), "visibility");
 	}
@@ -121,10 +124,12 @@ public class StepDefinitionEntities {
 	@Given("^User selects ([^\"]*) Menu$")
 	public void user_opens_Entities_Menu(String entityoption) throws Throwable {
 		if (entityoption.equals("Staff")) {
+			Log.info("Clicking on Staff menu");
 			home.getListItemStaffFromEntitiesMenu().click();
 			testContext.getWebDriverManager().getExplicitWaitForElement(
 					staff.getCreateStaffButton(), "visibility");
 		} else if (entityoption.equals("Branch")) {
+			Log.info("Clicking on Branch menu");
 			home.getListItemBranchFromEntitiesMenu().click();
 			testContext.getWebDriverManager().getExplicitWaitForElement(
 					branch.getCreateBranchButton(), "visibility");
@@ -135,29 +140,40 @@ public class StepDefinitionEntities {
 	public void user_creates_a_new_Entity_entry(String entity, String name)
 			throws Throwable {
 		if (entity.equals("Staff")) {
+			Log.info("Creating Staff entry");
 			staff.getCreateStaffButton().click();
 			testContext.getWebDriverManager().getExplicitWaitForElement(
 					staff.getCancelButton(), "visibility");
-			staff.getFormInputName().sendKeys(name);
+			Log.info("Entering Staff Name " + name);
+					staff.getFormInputName().sendKeys(name);
 			countBefore = staff.getStaffRowNameCoulumn().size();
+			Log.info("Count Before Creation =" + countBefore);
+			
 			staff.getSaveButton().click();
 
 			testContext.getWebDriverManager().getExplicitWaitForElement(
 					staff.getCreateStaffButton(), "visibility");
 
 		} else if (entity.equals("Branch")) {
+			Log.info("Creating Staff entry");
+			
 			branch.getCreateBranchButton().click();
 			testContext.getWebDriverManager().getExplicitWaitForElement(
 					branch.getCancelButton(), "visibility");
-
+			
+			Log.info("Entering Branch Name " + name);
 			branch.getFormInputName().sendKeys(name);
 		}
 	}
 
 	@When("^Branch Code \"([^\"]*)\"$")
 	public void branch_Code(String code) throws Throwable {
+		Log.info("Entering Branch Code " + code);
+		
 		branch.getFormInputBranch().sendKeys(code);
 		countBefore = branch.getBranchRowNameColumn().size();
+		Log.info("Count Before Creation =" + countBefore);
+		
 		branch.getSaveButton().click();
 		testContext.getWebDriverManager().getExplicitWaitForElement(
 				branch.getCreateBranchButton(), "visibility");
@@ -169,10 +185,15 @@ public class StepDefinitionEntities {
 			String name) throws Throwable {
 
 		if (entity.equals("Staff")) {
+			
 			countAfter = staff.getStaffRowNameCoulumn().size();
+			Log.info("Count After Creation =" + countAfter);
+			
 			Assert.assertTrue(countAfter > countBefore);
 		} else if (entity.equals("Branch")) {
+			
 			countAfter = branch.getBranchRowNameColumn().size();
+			Log.info("Count After Creation =" + countAfter);
 			Assert.assertTrue(countAfter > countBefore);
 		}
 	}
@@ -196,9 +217,11 @@ public class StepDefinitionEntities {
 	@When("^Clicks on Cancel Button for \"([^\"]*)\"$")
 	public void clicks_on_Cancel_Button(String entity) throws Throwable {
 		if (entity.equals("Staff")) {
+			Log.info("Clicking Cancel Button");
 			staff.getCancelButton().click();
 
 		} else if (entity.equals("Branch")) {
+			Log.info("Clicking Cancel Button");
 			branch.getCancelButton().click();
 		}
 

@@ -7,6 +7,8 @@ import java.util.Properties;
 
 import org.apache.log4j.xml.DOMConfigurator;
 
+import cucumber.Log;
+
 public class ConfigFileReader {
 
 	private Properties prop;
@@ -21,16 +23,26 @@ public class ConfigFileReader {
 		try {
 			fis = new FileInputStream(path);
 			try {
+				Log.info("Loading Property File");
 				prop.load(fis);
 			} catch (IOException e) {
 				e.printStackTrace();
+				Log.error("Not able to load Property File");
 			}
+			
 		} catch (FileNotFoundException e) {
 			
 			e.printStackTrace();
 			throw new RuntimeException("Property file not found");
 		}
 		DOMConfigurator.configure(userDirectory+"/src/test/resources/log4j.xml");
+		try {
+			fis.close();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+			throw new RuntimeException("Property file not found");
+		}
 	}
 	
 	public String getApplicationURL(){
