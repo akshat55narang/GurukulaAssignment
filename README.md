@@ -31,6 +31,8 @@ The project ( Maven Project ) also runs with command - mvn test ( from the folde
 
 Test Report location - The Extent Report will be created in the folder cucumber-reports with the name report.html. The report for the latest run can be referred.
 
-Note - Due to bugs as specified in DefectsandObservations file, the maven build will result in failure.
-
+Note - 
+1. Due to bugs as specified in DefectsandObservations file, the maven build will result in failure.
+2. parameter operating_system, needs to be updated to Linux for Linux Chrome Driver ( if the project is executed on a Linux machine). Currently the project is set for Windows operating system Chrome Driver.
+project is 
 
