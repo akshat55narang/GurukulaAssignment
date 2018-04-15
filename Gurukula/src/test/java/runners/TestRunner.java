@@ -19,8 +19,6 @@ import cucumber.api.junit.Cucumber;
 		features="src/test/resources"
 		,glue="stepDefinition"
 		,plugin = { "com.cucumber.listener.ExtentCucumberFormatter:"}
-		//,tags={"@R1Login1Test"}
-		//,dryRun=true
 		
 		)
 public class TestRunner {

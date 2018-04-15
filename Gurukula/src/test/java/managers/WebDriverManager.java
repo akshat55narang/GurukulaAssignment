@@ -40,7 +40,6 @@ public class WebDriverManager {
 		return (driver==null)? driver = openBrowser():driver;
 	}
 	
-	// Method to Open Browser with the speciifed url
 	
 	public WebDriver openBrowser(){
 		String path = System.getProperty("user.dir");
@@ -50,7 +49,6 @@ public class WebDriverManager {
 		String chromeDriverLinux = path+ConfigFileManager.getInstance().getConfiguration().getChromeDriverPathLinux();
 		Long implicitWait = Long.parseLong(ConfigFileManager.getInstance().getConfiguration().getimplicitWait());
 		String operatingSystem=ConfigFileManager.getInstance().getConfiguration().getOS();
-		System.out.println(chromeDriverWindows);
 		
 		if(browser.equals("chrome")){
 			if(operatingSystem.equals("Linux")){
@@ -66,7 +64,6 @@ public class WebDriverManager {
 	}
 		}
 		
-		//driver.manage().window().maximize();
 		driver.get(url);
 		Log.info("Setting Implicit Wait="+implicitWait);
 		driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);

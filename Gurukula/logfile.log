@@ -3081,3 +3081,1020 @@
 2018-04-15 21:22:51,215 INFO  [Log] Closing Browser 
 2018-04-15 21:22:51,429 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
 2018-04-15 21:22:51,429 INFO  [Log] Loading Property File 
+2018-04-15 21:31:23,009 INFO  [Log] Loading Property File 
+2018-04-15 21:31:23,023 INFO  [Log] Loading Property File 
+2018-04-15 21:31:23,030 INFO  [Log] Loading Property File 
+2018-04-15 21:31:23,036 INFO  [Log] Loading Property File 
+2018-04-15 21:31:23,044 INFO  [Log] Loading Property File 
+2018-04-15 21:31:23,049 INFO  [Log] Loading Property File 
+2018-04-15 21:31:23,062 INFO  [Log] Opening Browser 
+2018-04-15 21:31:27,473 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:31:27,627 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user is able to view Branch and Staff in the Entities Menu       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:31:27,919 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:31:28,070 INFO  [Log] Loading Property File 
+2018-04-15 21:31:28,086 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:28,447 INFO  [Log] Entering Credentials 
+2018-04-15 21:31:28,448 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:31:28,598 INFO  [Log] Loading Property File 
+2018-04-15 21:31:28,638 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:29,010 INFO  [Log] Click on Entities 
+2018-04-15 21:31:29,010 INFO  [Log] Loading Property File 
+2018-04-15 21:31:29,023 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:29,067 INFO  [Log] Asserting whether branches and staff is displayed in entity menu 
+2018-04-15 21:31:29,175 INFO  [Log] Closing Browser 
+2018-04-15 21:31:29,442 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:31:29,452 INFO  [Log] Loading Property File 
+2018-04-15 21:31:29,463 INFO  [Log] Loading Property File 
+2018-04-15 21:31:29,470 INFO  [Log] Loading Property File 
+2018-04-15 21:31:29,477 INFO  [Log] Loading Property File 
+2018-04-15 21:31:29,503 INFO  [Log] Loading Property File 
+2018-04-15 21:31:29,510 INFO  [Log] Loading Property File 
+2018-04-15 21:31:29,588 INFO  [Log] Opening Browser 
+2018-04-15 21:31:33,019 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:31:33,029 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user is able to create new Entity       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:31:33,034 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:31:33,242 INFO  [Log] Loading Property File 
+2018-04-15 21:31:33,249 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:33,583 INFO  [Log] Entering Credentials 
+2018-04-15 21:31:33,585 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:31:33,717 INFO  [Log] Loading Property File 
+2018-04-15 21:31:33,741 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:34,005 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:31:34,118 INFO  [Log] Loading Property File 
+2018-04-15 21:31:34,135 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:34,267 INFO  [Log] Loading Property File 
+2018-04-15 21:31:34,274 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:34,548 INFO  [Log] Loading Property File 
+2018-04-15 21:31:34,554 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:35,390 INFO  [Log] Creating staff entry with name =Computer Science 
+2018-04-15 21:31:55,624 INFO  [Log] Count Before Creation=0 
+2018-04-15 21:31:55,767 INFO  [Log] Loading Property File 
+2018-04-15 21:31:55,771 INFO  [Log] Setting Explicit Wait Type = invisibility 
+2018-04-15 21:31:56,379 INFO  [Log] Count Before Creation=0 
+2018-04-15 21:31:56,551 INFO  [Log] Clicking on View Button 
+2018-04-15 21:31:56,918 INFO  [Log] Clicking on Edit Button 
+2018-04-15 21:31:57,015 INFO  [Log] Loading Property File 
+2018-04-15 21:31:57,021 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:57,822 INFO  [Log] Entered New Name=Electronics 
+2018-04-15 21:31:57,822 INFO  [Log] Loading Property File 
+2018-04-15 21:31:57,825 INFO  [Log] Setting Explicit Wait Type = clickable 
+2018-04-15 21:31:58,011 INFO  [Log] Loading Property File 
+2018-04-15 21:31:58,016 INFO  [Log] Setting Explicit Wait Type = invisibility 
+2018-04-15 21:31:58,756 INFO  [Log] Clicking on Delete Button 
+2018-04-15 21:31:58,829 INFO  [Log] Loading Property File 
+2018-04-15 21:31:58,840 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:31:59,479 INFO  [Log] Clicking on Deletion Confirmation 
+2018-04-15 21:31:59,572 INFO  [Log] Loading Property File 
+2018-04-15 21:31:59,577 INFO  [Log] Setting Explicit Wait Type = invisibility 
+2018-04-15 21:32:09,641 INFO  [Log] Closing Browser 
+2018-04-15 21:32:09,805 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:32:09,808 INFO  [Log] Loading Property File 
+2018-04-15 21:32:09,813 INFO  [Log] Loading Property File 
+2018-04-15 21:32:09,817 INFO  [Log] Loading Property File 
+2018-04-15 21:32:09,820 INFO  [Log] Loading Property File 
+2018-04-15 21:32:09,823 INFO  [Log] Loading Property File 
+2018-04-15 21:32:09,827 INFO  [Log] Loading Property File 
+2018-04-15 21:32:09,830 INFO  [Log] Opening Browser 
+2018-04-15 21:32:13,683 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:32:13,689 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user is able to create new Entity       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:32:13,691 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:32:13,940 INFO  [Log] Loading Property File 
+2018-04-15 21:32:13,945 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:14,268 INFO  [Log] Entering Credentials 
+2018-04-15 21:32:14,269 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:32:14,439 INFO  [Log] Loading Property File 
+2018-04-15 21:32:14,445 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:14,726 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:32:14,853 INFO  [Log] Loading Property File 
+2018-04-15 21:32:14,857 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:14,988 INFO  [Log] Loading Property File 
+2018-04-15 21:32:14,993 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:15,239 INFO  [Log] Loading Property File 
+2018-04-15 21:32:15,244 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:16,043 INFO  [Log] Creating staff entry with name =Akshat Narang 
+2018-04-15 21:32:26,062 INFO  [Log] Count Before Creation=0 
+2018-04-15 21:32:26,231 INFO  [Log] Loading Property File 
+2018-04-15 21:32:26,235 INFO  [Log] Setting Explicit Wait Type = invisibility 
+2018-04-15 21:32:26,846 INFO  [Log] Count After Creation=1 
+2018-04-15 21:32:27,043 INFO  [Log] Clicking on View Button 
+2018-04-15 21:32:27,440 INFO  [Log] Clicking on Edit Button 
+2018-04-15 21:32:27,440 INFO  [Log] Loading Property File 
+2018-04-15 21:32:27,446 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:28,291 INFO  [Log] Entered New Name=TestStaff 
+2018-04-15 21:32:28,291 INFO  [Log] Loading Property File 
+2018-04-15 21:32:28,296 INFO  [Log] Setting Explicit Wait Type = clickable 
+2018-04-15 21:32:28,496 INFO  [Log] Loading Property File 
+2018-04-15 21:32:28,500 INFO  [Log] Setting Explicit Wait Type = invisibility 
+2018-04-15 21:32:29,219 INFO  [Log] Clicking on Delete Button 
+2018-04-15 21:32:29,308 INFO  [Log] Loading Property File 
+2018-04-15 21:32:29,313 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:29,941 INFO  [Log] Clicking on Deletion Confirmation 
+2018-04-15 21:32:30,072 INFO  [Log] Loading Property File 
+2018-04-15 21:32:30,076 INFO  [Log] Setting Explicit Wait Type = invisibility 
+2018-04-15 21:32:40,191 INFO  [Log] Closing Browser 
+2018-04-15 21:32:40,272 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:32:40,277 INFO  [Log] Loading Property File 
+2018-04-15 21:32:40,281 INFO  [Log] Loading Property File 
+2018-04-15 21:32:40,293 INFO  [Log] Loading Property File 
+2018-04-15 21:32:40,297 INFO  [Log] Loading Property File 
+2018-04-15 21:32:40,301 INFO  [Log] Loading Property File 
+2018-04-15 21:32:40,305 INFO  [Log] Loading Property File 
+2018-04-15 21:32:40,309 INFO  [Log] Opening Browser 
+2018-04-15 21:32:43,458 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:32:43,462 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a Branch or Staff entry is not created when Cancel Button is pressed       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:32:43,465 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:32:43,686 INFO  [Log] Loading Property File 
+2018-04-15 21:32:43,690 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:44,016 INFO  [Log] Entering Credentials 
+2018-04-15 21:32:44,017 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:32:44,140 INFO  [Log] Loading Property File 
+2018-04-15 21:32:44,148 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:44,407 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:32:44,523 INFO  [Log] Loading Property File 
+2018-04-15 21:32:44,528 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:44,648 INFO  [Log] Loading Property File 
+2018-04-15 21:32:44,652 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:44,907 INFO  [Log] Loading Property File 
+2018-04-15 21:32:44,910 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:45,799 INFO  [Log] Clicking Cancel Button 
+2018-04-15 21:32:55,976 INFO  [Log] Count After Clicking on Cancel Button=0 
+2018-04-15 21:32:55,977 INFO  [Log] Closing Browser 
+2018-04-15 21:32:56,192 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:32:56,194 INFO  [Log] Loading Property File 
+2018-04-15 21:32:56,196 INFO  [Log] Loading Property File 
+2018-04-15 21:32:56,200 INFO  [Log] Loading Property File 
+2018-04-15 21:32:56,204 INFO  [Log] Loading Property File 
+2018-04-15 21:32:56,208 INFO  [Log] Loading Property File 
+2018-04-15 21:32:56,212 INFO  [Log] Loading Property File 
+2018-04-15 21:32:56,216 INFO  [Log] Opening Browser 
+2018-04-15 21:32:59,056 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:32:59,060 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a Branch or Staff entry is not created when Cancel Button is pressed       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:32:59,062 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:32:59,302 INFO  [Log] Loading Property File 
+2018-04-15 21:32:59,314 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:32:59,644 INFO  [Log] Entering Credentials 
+2018-04-15 21:32:59,645 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:32:59,791 INFO  [Log] Loading Property File 
+2018-04-15 21:32:59,796 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:00,090 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:33:00,196 INFO  [Log] Loading Property File 
+2018-04-15 21:33:00,201 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:00,355 INFO  [Log] Loading Property File 
+2018-04-15 21:33:00,359 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:00,637 INFO  [Log] Loading Property File 
+2018-04-15 21:33:00,641 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:01,438 INFO  [Log] Clicking Cancel Button 
+2018-04-15 21:33:11,593 INFO  [Log] Count After Clicking on Cancel Button=0 
+2018-04-15 21:33:11,594 INFO  [Log] Closing Browser 
+2018-04-15 21:33:11,760 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:33:11,762 INFO  [Log] Loading Property File 
+2018-04-15 21:33:11,765 INFO  [Log] Loading Property File 
+2018-04-15 21:33:11,768 INFO  [Log] Loading Property File 
+2018-04-15 21:33:11,770 INFO  [Log] Loading Property File 
+2018-04-15 21:33:11,773 INFO  [Log] Loading Property File 
+2018-04-15 21:33:11,776 INFO  [Log] Loading Property File 
+2018-04-15 21:33:11,783 INFO  [Log] Opening Browser 
+2018-04-15 21:33:15,905 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:33:15,910 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a user receives an error message when the Branch or Staff name is not in expected format       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:33:15,912 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:16,153 INFO  [Log] Loading Property File 
+2018-04-15 21:33:16,158 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:16,494 INFO  [Log] Entering Credentials 
+2018-04-15 21:33:16,495 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:16,630 INFO  [Log] Loading Property File 
+2018-04-15 21:33:16,633 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:16,925 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:33:17,049 INFO  [Log] Loading Property File 
+2018-04-15 21:33:17,053 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:17,187 INFO  [Log] Loading Property File 
+2018-04-15 21:33:17,192 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:17,444 INFO  [Log] Loading Property File 
+2018-04-15 21:33:17,448 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:28,337 INFO  [Log] Count of Failure Messages=0 
+2018-04-15 21:33:28,433 INFO  [Log] Closing Browser 
+2018-04-15 21:33:28,600 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:33:28,601 INFO  [Log] Loading Property File 
+2018-04-15 21:33:28,604 INFO  [Log] Loading Property File 
+2018-04-15 21:33:28,606 INFO  [Log] Loading Property File 
+2018-04-15 21:33:28,609 INFO  [Log] Loading Property File 
+2018-04-15 21:33:28,612 INFO  [Log] Loading Property File 
+2018-04-15 21:33:28,617 INFO  [Log] Loading Property File 
+2018-04-15 21:33:28,625 INFO  [Log] Opening Browser 
+2018-04-15 21:33:31,407 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:33:31,412 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a user receives an error message when the Branch or Staff name is not in expected format       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:33:31,416 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:31,612 INFO  [Log] Loading Property File 
+2018-04-15 21:33:31,615 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:31,944 INFO  [Log] Entering Credentials 
+2018-04-15 21:33:31,945 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:32,090 INFO  [Log] Loading Property File 
+2018-04-15 21:33:32,095 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:32,370 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:33:32,477 INFO  [Log] Loading Property File 
+2018-04-15 21:33:32,485 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:32,602 INFO  [Log] Loading Property File 
+2018-04-15 21:33:32,606 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:32,872 INFO  [Log] Loading Property File 
+2018-04-15 21:33:32,880 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:34,242 INFO  [Log] Count of Failure Messages=1 
+2018-04-15 21:33:35,024 INFO  [Log] Closing Browser 
+2018-04-15 21:33:35,190 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:33:35,192 INFO  [Log] Loading Property File 
+2018-04-15 21:33:35,196 INFO  [Log] Loading Property File 
+2018-04-15 21:33:35,198 INFO  [Log] Loading Property File 
+2018-04-15 21:33:35,201 INFO  [Log] Loading Property File 
+2018-04-15 21:33:35,203 INFO  [Log] Loading Property File 
+2018-04-15 21:33:35,207 INFO  [Log] Loading Property File 
+2018-04-15 21:33:35,210 INFO  [Log] Opening Browser 
+2018-04-15 21:33:38,028 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:33:38,031 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a user receives an error message when the Branch or Staff name is not in expected format       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:33:38,033 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:38,275 INFO  [Log] Loading Property File 
+2018-04-15 21:33:38,281 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:38,606 INFO  [Log] Entering Credentials 
+2018-04-15 21:33:38,607 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:38,750 INFO  [Log] Loading Property File 
+2018-04-15 21:33:38,757 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:39,029 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:33:39,135 INFO  [Log] Loading Property File 
+2018-04-15 21:33:39,138 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:39,265 INFO  [Log] Loading Property File 
+2018-04-15 21:33:39,268 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:39,559 INFO  [Log] Loading Property File 
+2018-04-15 21:33:39,563 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:40,465 INFO  [Log] Count of Failure Messages=1 
+2018-04-15 21:33:40,763 INFO  [Log] Closing Browser 
+2018-04-15 21:33:40,979 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:33:40,983 INFO  [Log] Loading Property File 
+2018-04-15 21:33:40,988 INFO  [Log] Loading Property File 
+2018-04-15 21:33:40,997 INFO  [Log] Loading Property File 
+2018-04-15 21:33:41,000 INFO  [Log] Loading Property File 
+2018-04-15 21:33:41,005 INFO  [Log] Loading Property File 
+2018-04-15 21:33:41,010 INFO  [Log] Loading Property File 
+2018-04-15 21:33:41,014 INFO  [Log] Opening Browser 
+2018-04-15 21:33:44,028 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:33:44,031 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a user receives an error message when the Branch or Staff name is not in expected format       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:33:44,033 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:44,266 INFO  [Log] Loading Property File 
+2018-04-15 21:33:44,270 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:44,589 INFO  [Log] Entering Credentials 
+2018-04-15 21:33:44,590 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:44,731 INFO  [Log] Loading Property File 
+2018-04-15 21:33:44,734 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:45,005 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:33:45,129 INFO  [Log] Loading Property File 
+2018-04-15 21:33:45,136 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:45,368 INFO  [Log] Loading Property File 
+2018-04-15 21:33:45,377 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:45,668 INFO  [Log] Closing Browser 
+2018-04-15 21:33:45,829 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:33:45,830 INFO  [Log] Loading Property File 
+2018-04-15 21:33:45,834 INFO  [Log] Loading Property File 
+2018-04-15 21:33:45,845 INFO  [Log] Loading Property File 
+2018-04-15 21:33:45,848 INFO  [Log] Loading Property File 
+2018-04-15 21:33:45,852 INFO  [Log] Loading Property File 
+2018-04-15 21:33:45,854 INFO  [Log] Loading Property File 
+2018-04-15 21:33:45,856 INFO  [Log] Opening Browser 
+2018-04-15 21:33:49,114 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:33:49,118 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a user receives an error message when the Branch or Staff name is not in expected format       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:33:49,121 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:49,316 INFO  [Log] Loading Property File 
+2018-04-15 21:33:49,320 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:49,641 INFO  [Log] Entering Credentials 
+2018-04-15 21:33:49,642 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:49,802 INFO  [Log] Loading Property File 
+2018-04-15 21:33:49,809 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:50,123 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:33:50,231 INFO  [Log] Loading Property File 
+2018-04-15 21:33:50,237 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:50,406 INFO  [Log] Loading Property File 
+2018-04-15 21:33:50,410 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:50,670 INFO  [Log] Closing Browser 
+2018-04-15 21:33:50,841 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:33:50,843 INFO  [Log] Loading Property File 
+2018-04-15 21:33:50,846 INFO  [Log] Loading Property File 
+2018-04-15 21:33:50,848 INFO  [Log] Loading Property File 
+2018-04-15 21:33:50,850 INFO  [Log] Loading Property File 
+2018-04-15 21:33:50,852 INFO  [Log] Loading Property File 
+2018-04-15 21:33:50,854 INFO  [Log] Loading Property File 
+2018-04-15 21:33:50,856 INFO  [Log] Opening Browser 
+2018-04-15 21:33:53,545 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:33:53,547 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a user receives an error message when the Branch or Staff name is not in expected format       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:33:53,549 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:53,776 INFO  [Log] Loading Property File 
+2018-04-15 21:33:53,780 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:54,096 INFO  [Log] Entering Credentials 
+2018-04-15 21:33:54,097 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:54,257 INFO  [Log] Loading Property File 
+2018-04-15 21:33:54,260 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:54,550 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:33:54,669 INFO  [Log] Loading Property File 
+2018-04-15 21:33:54,673 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:54,795 INFO  [Log] Loading Property File 
+2018-04-15 21:33:54,799 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:55,072 INFO  [Log] Closing Browser 
+2018-04-15 21:33:55,241 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:33:55,243 INFO  [Log] Loading Property File 
+2018-04-15 21:33:55,248 INFO  [Log] Loading Property File 
+2018-04-15 21:33:55,252 INFO  [Log] Loading Property File 
+2018-04-15 21:33:55,256 INFO  [Log] Loading Property File 
+2018-04-15 21:33:55,261 INFO  [Log] Loading Property File 
+2018-04-15 21:33:55,265 INFO  [Log] Loading Property File 
+2018-04-15 21:33:55,269 INFO  [Log] Opening Browser 
+2018-04-15 21:33:59,062 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:33:59,065 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a user receives an error message when the Branch or Staff name is not in expected format       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:33:59,067 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:59,301 INFO  [Log] Loading Property File 
+2018-04-15 21:33:59,304 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:33:59,641 INFO  [Log] Entering Credentials 
+2018-04-15 21:33:59,641 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:33:59,772 INFO  [Log] Loading Property File 
+2018-04-15 21:33:59,776 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:00,045 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:34:00,171 INFO  [Log] Loading Property File 
+2018-04-15 21:34:00,174 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:00,290 INFO  [Log] Loading Property File 
+2018-04-15 21:34:00,298 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:00,697 INFO  [Log] Closing Browser 
+2018-04-15 21:34:00,919 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:00,923 INFO  [Log] Loading Property File 
+2018-04-15 21:34:00,925 INFO  [Log] Loading Property File 
+2018-04-15 21:34:00,927 INFO  [Log] Loading Property File 
+2018-04-15 21:34:00,929 INFO  [Log] Loading Property File 
+2018-04-15 21:34:00,931 INFO  [Log] Loading Property File 
+2018-04-15 21:34:00,933 INFO  [Log] Loading Property File 
+2018-04-15 21:34:00,935 INFO  [Log] Opening Browser 
+2018-04-15 21:34:03,969 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:03,973 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a user receives an error message when the Branch or Staff name is not in expected format       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:03,974 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:04,184 INFO  [Log] Loading Property File 
+2018-04-15 21:34:04,187 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:04,529 INFO  [Log] Entering Credentials 
+2018-04-15 21:34:04,530 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:04,677 INFO  [Log] Loading Property File 
+2018-04-15 21:34:04,681 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:04,974 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:34:05,088 INFO  [Log] Loading Property File 
+2018-04-15 21:34:05,091 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:05,203 INFO  [Log] Loading Property File 
+2018-04-15 21:34:05,206 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:05,498 INFO  [Log] Closing Browser 
+2018-04-15 21:34:05,660 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:05,661 INFO  [Log] Loading Property File 
+2018-04-15 21:34:05,664 INFO  [Log] Loading Property File 
+2018-04-15 21:34:05,666 INFO  [Log] Loading Property File 
+2018-04-15 21:34:05,668 INFO  [Log] Loading Property File 
+2018-04-15 21:34:05,671 INFO  [Log] Loading Property File 
+2018-04-15 21:34:05,673 INFO  [Log] Loading Property File 
+2018-04-15 21:34:05,676 INFO  [Log] Opening Browser 
+2018-04-15 21:34:08,447 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:08,452 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a user receives an error message when the Branch or Staff name is not in expected format       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:08,453 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:08,686 INFO  [Log] Loading Property File 
+2018-04-15 21:34:08,692 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:09,013 INFO  [Log] Entering Credentials 
+2018-04-15 21:34:09,014 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:09,172 INFO  [Log] Loading Property File 
+2018-04-15 21:34:09,175 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:09,487 INFO  [Log] Clicking on Entity Menu 
+2018-04-15 21:34:09,625 INFO  [Log] Loading Property File 
+2018-04-15 21:34:09,628 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:09,789 INFO  [Log] Loading Property File 
+2018-04-15 21:34:09,793 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:10,046 INFO  [Log] Closing Browser 
+2018-04-15 21:34:10,208 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:10,210 INFO  [Log] Loading Property File 
+2018-04-15 21:34:10,213 INFO  [Log] Loading Property File 
+2018-04-15 21:34:10,216 INFO  [Log] Loading Property File 
+2018-04-15 21:34:10,226 INFO  [Log] Loading Property File 
+2018-04-15 21:34:10,229 INFO  [Log] Loading Property File 
+2018-04-15 21:34:10,232 INFO  [Log] Loading Property File 
+2018-04-15 21:34:10,235 INFO  [Log] Opening Browser 
+2018-04-15 21:34:13,907 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:13,911 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user is able to login with Valid Username and Password       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:13,913 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:14,155 INFO  [Log] Loading Property File 
+2018-04-15 21:34:14,158 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:14,228 INFO  [Log] Enter username =admin 
+2018-04-15 21:34:14,229 INFO  [Log] Enter password =admin 
+2018-04-15 21:34:14,487 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:14,934 INFO  [Log] Closing Browser 
+2018-04-15 21:34:15,096 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:15,099 INFO  [Log] Loading Property File 
+2018-04-15 21:34:15,102 INFO  [Log] Loading Property File 
+2018-04-15 21:34:15,104 INFO  [Log] Loading Property File 
+2018-04-15 21:34:15,107 INFO  [Log] Loading Property File 
+2018-04-15 21:34:15,110 INFO  [Log] Loading Property File 
+2018-04-15 21:34:15,113 INFO  [Log] Loading Property File 
+2018-04-15 21:34:15,121 INFO  [Log] Opening Browser 
+2018-04-15 21:34:17,819 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:17,822 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 : Verify whether user is able to login with Invalid Username or Password       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:17,826 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:18,054 INFO  [Log] Loading Property File 
+2018-04-15 21:34:18,058 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:18,138 INFO  [Log] Enter username =invaliduser 
+2018-04-15 21:34:18,138 INFO  [Log] Enter password =admin 
+2018-04-15 21:34:18,426 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:18,800 INFO  [Log] Closing Browser 
+2018-04-15 21:34:18,916 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:18,919 INFO  [Log] Loading Property File 
+2018-04-15 21:34:18,922 INFO  [Log] Loading Property File 
+2018-04-15 21:34:18,925 INFO  [Log] Loading Property File 
+2018-04-15 21:34:18,927 INFO  [Log] Loading Property File 
+2018-04-15 21:34:18,931 INFO  [Log] Loading Property File 
+2018-04-15 21:34:18,933 INFO  [Log] Loading Property File 
+2018-04-15 21:34:18,936 INFO  [Log] Opening Browser 
+2018-04-15 21:34:22,332 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:22,336 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 : Verify whether user is able to login with Invalid Username or Password       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:22,339 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:22,584 INFO  [Log] Loading Property File 
+2018-04-15 21:34:22,586 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:22,656 INFO  [Log] Enter username =admin 
+2018-04-15 21:34:22,656 INFO  [Log] Enter password =invalidpassword 
+2018-04-15 21:34:23,026 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:23,332 INFO  [Log] Closing Browser 
+2018-04-15 21:34:23,496 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:23,498 INFO  [Log] Loading Property File 
+2018-04-15 21:34:23,504 INFO  [Log] Loading Property File 
+2018-04-15 21:34:23,508 INFO  [Log] Loading Property File 
+2018-04-15 21:34:23,512 INFO  [Log] Loading Property File 
+2018-04-15 21:34:23,517 INFO  [Log] Loading Property File 
+2018-04-15 21:34:23,521 INFO  [Log] Loading Property File 
+2018-04-15 21:34:23,526 INFO  [Log] Opening Browser 
+2018-04-15 21:34:26,241 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:26,244 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user is able to logout of the application       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:26,246 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:26,464 INFO  [Log] Loading Property File 
+2018-04-15 21:34:26,467 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:26,791 INFO  [Log] Entering Credentials 
+2018-04-15 21:34:26,791 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:26,936 INFO  [Log] Loading Property File 
+2018-04-15 21:34:26,939 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:27,222 INFO  [Log] Clicking on Account Button 
+2018-04-15 21:34:27,349 INFO  [Log] Getting the count of value in Account List=4 
+2018-04-15 21:34:27,391 INFO  [Log] Value of 0item= Settings 
+2018-04-15 21:34:27,445 INFO  [Log] Value of 1item= Password 
+2018-04-15 21:34:27,506 INFO  [Log] Value of 2item= Sessions 
+2018-04-15 21:34:27,569 INFO  [Log] Value of 3item= Log out 
+2018-04-15 21:34:27,703 INFO  [Log] Verifying if the login button is displayed after user logout 
+2018-04-15 21:34:27,752 INFO  [Log] Closing Browser 
+2018-04-15 21:34:27,911 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:27,913 INFO  [Log] Loading Property File 
+2018-04-15 21:34:27,919 INFO  [Log] Loading Property File 
+2018-04-15 21:34:27,921 INFO  [Log] Loading Property File 
+2018-04-15 21:34:27,923 INFO  [Log] Loading Property File 
+2018-04-15 21:34:27,926 INFO  [Log] Loading Property File 
+2018-04-15 21:34:27,929 INFO  [Log] Loading Property File 
+2018-04-15 21:34:27,932 INFO  [Log] Opening Browser 
+2018-04-15 21:34:30,671 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:30,674 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user is able to edit the logged in account information       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:30,676 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:30,911 INFO  [Log] Loading Property File 
+2018-04-15 21:34:30,914 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:31,244 INFO  [Log] Entering Credentials 
+2018-04-15 21:34:31,245 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:31,402 INFO  [Log] Loading Property File 
+2018-04-15 21:34:31,404 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:31,693 INFO  [Log] Closing Browser 
+2018-04-15 21:34:31,856 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:31,858 INFO  [Log] Loading Property File 
+2018-04-15 21:34:31,862 INFO  [Log] Loading Property File 
+2018-04-15 21:34:31,864 INFO  [Log] Loading Property File 
+2018-04-15 21:34:31,866 INFO  [Log] Loading Property File 
+2018-04-15 21:34:31,868 INFO  [Log] Loading Property File 
+2018-04-15 21:34:31,871 INFO  [Log] Loading Property File 
+2018-04-15 21:34:31,878 INFO  [Log] Opening Browser 
+2018-04-15 21:34:34,713 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:34,716 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user is able to reset the password using the Reset Password Link       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:34,718 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:34,940 INFO  [Log] Loading Property File 
+2018-04-15 21:34:34,943 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:35,008 INFO  [Log] Clicking on Forgot Password Link 
+2018-04-15 21:34:35,199 INFO  [Log] Loading Property File 
+2018-04-15 21:34:35,203 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:35,255 INFO  [Log] Entering email for new registration = akshat55narang@gmail.com 
+2018-04-15 21:34:35,568 INFO  [Log] Clicking on Reset Password Button  
+2018-04-15 21:34:35,813 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:35,888 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:35,949 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:36,003 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:36,082 INFO  [Log] Closing Browser 
+2018-04-15 21:34:36,196 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:36,200 INFO  [Log] Loading Property File 
+2018-04-15 21:34:36,203 INFO  [Log] Loading Property File 
+2018-04-15 21:34:36,206 INFO  [Log] Loading Property File 
+2018-04-15 21:34:36,209 INFO  [Log] Loading Property File 
+2018-04-15 21:34:36,212 INFO  [Log] Loading Property File 
+2018-04-15 21:34:36,215 INFO  [Log] Loading Property File 
+2018-04-15 21:34:36,218 INFO  [Log] Opening Browser 
+2018-04-15 21:34:38,865 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:38,868 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether Reset Password Button is disabled by default       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:38,870 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:39,089 INFO  [Log] Loading Property File 
+2018-04-15 21:34:39,092 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:39,170 INFO  [Log] Clicking on Forgot Password Link 
+2018-04-15 21:34:39,395 INFO  [Log] Loading Property File 
+2018-04-15 21:34:39,397 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:39,483 INFO  [Log] Verifying whether reset password button is displayed 
+2018-04-15 21:34:39,529 INFO  [Log] Closing Browser 
+2018-04-15 21:34:40,264 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:40,265 INFO  [Log] Loading Property File 
+2018-04-15 21:34:40,267 INFO  [Log] Loading Property File 
+2018-04-15 21:34:40,270 INFO  [Log] Loading Property File 
+2018-04-15 21:34:40,272 INFO  [Log] Loading Property File 
+2018-04-15 21:34:40,275 INFO  [Log] Loading Property File 
+2018-04-15 21:34:40,277 INFO  [Log] Loading Property File 
+2018-04-15 21:34:40,280 INFO  [Log] Opening Browser 
+2018-04-15 21:34:43,734 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:43,737 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when email is more than 50 characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:43,739 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:43,971 INFO  [Log] Loading Property File 
+2018-04-15 21:34:43,974 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:44,045 INFO  [Log] Clicking on Forgot Password Link 
+2018-04-15 21:34:44,256 INFO  [Log] Loading Property File 
+2018-04-15 21:34:44,259 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:44,320 INFO  [Log] Entering email for new registration = adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa@test.com 
+2018-04-15 21:34:45,266 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:45,351 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:45,397 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:45,445 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:45,468 INFO  [Log] Closing Browser 
+2018-04-15 21:34:45,681 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:45,684 INFO  [Log] Loading Property File 
+2018-04-15 21:34:45,689 INFO  [Log] Loading Property File 
+2018-04-15 21:34:45,692 INFO  [Log] Loading Property File 
+2018-04-15 21:34:45,695 INFO  [Log] Loading Property File 
+2018-04-15 21:34:45,698 INFO  [Log] Loading Property File 
+2018-04-15 21:34:45,701 INFO  [Log] Loading Property File 
+2018-04-15 21:34:45,705 INFO  [Log] Opening Browser 
+2018-04-15 21:34:49,182 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:49,188 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when email is less than 5 characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:49,190 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:49,424 INFO  [Log] Loading Property File 
+2018-04-15 21:34:49,426 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:49,502 INFO  [Log] Clicking on Forgot Password Link 
+2018-04-15 21:34:49,697 INFO  [Log] Loading Property File 
+2018-04-15 21:34:49,700 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:49,757 INFO  [Log] Entering email for new registration = a@c 
+2018-04-15 21:34:49,990 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:50,105 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:50,178 INFO  [Log] Message received when User clicked on Reset Password=Your e-mail is required to be at least 5 characters. 
+2018-04-15 21:34:50,207 INFO  [Log] Closing Browser 
+2018-04-15 21:34:50,416 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:50,418 INFO  [Log] Loading Property File 
+2018-04-15 21:34:50,421 INFO  [Log] Loading Property File 
+2018-04-15 21:34:50,422 INFO  [Log] Loading Property File 
+2018-04-15 21:34:50,424 INFO  [Log] Loading Property File 
+2018-04-15 21:34:50,425 INFO  [Log] Loading Property File 
+2018-04-15 21:34:50,427 INFO  [Log] Loading Property File 
+2018-04-15 21:34:50,429 INFO  [Log] Opening Browser 
+2018-04-15 21:34:53,548 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:53,551 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when email is invalid       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:53,554 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:53,766 INFO  [Log] Loading Property File 
+2018-04-15 21:34:53,770 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:53,842 INFO  [Log] Clicking on Forgot Password Link 
+2018-04-15 21:34:54,058 INFO  [Log] Loading Property File 
+2018-04-15 21:34:54,061 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:54,128 INFO  [Log] Entering email for new registration = a 
+2018-04-15 21:34:54,305 INFO  [Log] Message received when User clicked on Reset Password= 
+2018-04-15 21:34:54,356 INFO  [Log] Message received when User clicked on Reset Password=Your e-mail is invalid. 
+2018-04-15 21:34:54,376 INFO  [Log] Closing Browser 
+2018-04-15 21:34:54,486 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:54,488 INFO  [Log] Loading Property File 
+2018-04-15 21:34:54,492 INFO  [Log] Loading Property File 
+2018-04-15 21:34:54,495 INFO  [Log] Loading Property File 
+2018-04-15 21:34:54,498 INFO  [Log] Loading Property File 
+2018-04-15 21:34:54,500 INFO  [Log] Loading Property File 
+2018-04-15 21:34:54,502 INFO  [Log] Loading Property File 
+2018-04-15 21:34:54,505 INFO  [Log] Opening Browser 
+2018-04-15 21:34:57,085 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:34:57,090 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when email is not provided       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:34:57,092 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:34:57,333 INFO  [Log] Loading Property File 
+2018-04-15 21:34:57,335 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:57,419 INFO  [Log] Clicking on Forgot Password Link 
+2018-04-15 21:34:57,624 INFO  [Log] Loading Property File 
+2018-04-15 21:34:57,626 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:57,686 INFO  [Log] Entering email for new registration = akshat55narang@gmail.com 
+2018-04-15 21:34:58,020 INFO  [Log] Deleting email from input  
+2018-04-15 21:34:58,079 INFO  [Log] Loading Property File 
+2018-04-15 21:34:58,081 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:34:58,181 INFO  [Log] Closing Browser 
+2018-04-15 21:34:58,342 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:34:58,343 INFO  [Log] Loading Property File 
+2018-04-15 21:34:58,346 INFO  [Log] Loading Property File 
+2018-04-15 21:34:58,348 INFO  [Log] Loading Property File 
+2018-04-15 21:34:58,351 INFO  [Log] Loading Property File 
+2018-04-15 21:34:58,354 INFO  [Log] Loading Property File 
+2018-04-15 21:34:58,356 INFO  [Log] Loading Property File 
+2018-04-15 21:34:58,359 INFO  [Log] Opening Browser 
+2018-04-15 21:35:00,942 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:00,945 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether a new user is able to Register for gurukula       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:00,947 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:02,289 INFO  [Log] Clicking on Registration Button 
+2018-04-15 21:35:02,720 INFO  [Log] Closing Browser 
+2018-04-15 21:35:02,931 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:02,933 INFO  [Log] Loading Property File 
+2018-04-15 21:35:02,935 INFO  [Log] Loading Property File 
+2018-04-15 21:35:02,937 INFO  [Log] Loading Property File 
+2018-04-15 21:35:02,939 INFO  [Log] Loading Property File 
+2018-04-15 21:35:02,941 INFO  [Log] Loading Property File 
+2018-04-15 21:35:02,943 INFO  [Log] Loading Property File 
+2018-04-15 21:35:02,949 INFO  [Log] Opening Browser 
+2018-04-15 21:35:06,174 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:06,177 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether the Register is deactivated by default       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:06,179 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:06,603 INFO  [Log] Closing Browser 
+2018-04-15 21:35:06,864 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:06,866 INFO  [Log] Loading Property File 
+2018-04-15 21:35:06,870 INFO  [Log] Loading Property File 
+2018-04-15 21:35:06,873 INFO  [Log] Loading Property File 
+2018-04-15 21:35:06,875 INFO  [Log] Loading Property File 
+2018-04-15 21:35:06,877 INFO  [Log] Loading Property File 
+2018-04-15 21:35:06,879 INFO  [Log] Loading Property File 
+2018-04-15 21:35:06,882 INFO  [Log] Opening Browser 
+2018-04-15 21:35:10,620 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:10,623 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether the Register is deactivated until all the mandatory checks on fields are met       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:10,625 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:11,057 INFO  [Log] Closing Browser 
+2018-04-15 21:35:11,268 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:11,271 INFO  [Log] Loading Property File 
+2018-04-15 21:35:11,275 INFO  [Log] Loading Property File 
+2018-04-15 21:35:11,280 INFO  [Log] Loading Property File 
+2018-04-15 21:35:11,283 INFO  [Log] Loading Property File 
+2018-04-15 21:35:11,286 INFO  [Log] Loading Property File 
+2018-04-15 21:35:11,289 INFO  [Log] Loading Property File 
+2018-04-15 21:35:11,298 INFO  [Log] Opening Browser 
+2018-04-15 21:35:18,035 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:18,041 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when login contains special characters or Uppercase characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:18,043 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:18,700 INFO  [Log] Closing Browser 
+2018-04-15 21:35:18,873 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:18,875 INFO  [Log] Loading Property File 
+2018-04-15 21:35:18,877 INFO  [Log] Loading Property File 
+2018-04-15 21:35:18,879 INFO  [Log] Loading Property File 
+2018-04-15 21:35:18,882 INFO  [Log] Loading Property File 
+2018-04-15 21:35:18,885 INFO  [Log] Loading Property File 
+2018-04-15 21:35:18,887 INFO  [Log] Loading Property File 
+2018-04-15 21:35:18,890 INFO  [Log] Opening Browser 
+2018-04-15 21:35:21,637 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:21,640 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when login contains special characters or Uppercase characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:21,643 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:22,298 INFO  [Log] Closing Browser 
+2018-04-15 21:35:22,459 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:22,461 INFO  [Log] Loading Property File 
+2018-04-15 21:35:22,464 INFO  [Log] Loading Property File 
+2018-04-15 21:35:22,467 INFO  [Log] Loading Property File 
+2018-04-15 21:35:22,469 INFO  [Log] Loading Property File 
+2018-04-15 21:35:22,471 INFO  [Log] Loading Property File 
+2018-04-15 21:35:22,474 INFO  [Log] Loading Property File 
+2018-04-15 21:35:22,476 INFO  [Log] Opening Browser 
+2018-04-15 21:35:25,173 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:25,176 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when details entered are incorrect       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:25,178 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:26,065 INFO  [Log] Closing Browser 
+2018-04-15 21:35:26,478 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:26,481 INFO  [Log] Loading Property File 
+2018-04-15 21:35:26,486 INFO  [Log] Loading Property File 
+2018-04-15 21:35:26,490 INFO  [Log] Loading Property File 
+2018-04-15 21:35:26,494 INFO  [Log] Loading Property File 
+2018-04-15 21:35:26,498 INFO  [Log] Loading Property File 
+2018-04-15 21:35:26,502 INFO  [Log] Loading Property File 
+2018-04-15 21:35:26,507 INFO  [Log] Opening Browser 
+2018-04-15 21:35:29,236 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:29,239 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when details entered are incorrect       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:29,241 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:40,485 INFO  [Log] Closing Browser 
+2018-04-15 21:35:40,666 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:40,667 INFO  [Log] Loading Property File 
+2018-04-15 21:35:40,672 INFO  [Log] Loading Property File 
+2018-04-15 21:35:40,675 INFO  [Log] Loading Property File 
+2018-04-15 21:35:40,677 INFO  [Log] Loading Property File 
+2018-04-15 21:35:40,680 INFO  [Log] Loading Property File 
+2018-04-15 21:35:40,682 INFO  [Log] Loading Property File 
+2018-04-15 21:35:40,684 INFO  [Log] Opening Browser 
+2018-04-15 21:35:43,321 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:43,324 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when details entered are incorrect       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:43,325 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:43,943 INFO  [Log] Closing Browser 
+2018-04-15 21:35:44,110 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:44,111 INFO  [Log] Loading Property File 
+2018-04-15 21:35:44,114 INFO  [Log] Loading Property File 
+2018-04-15 21:35:44,116 INFO  [Log] Loading Property File 
+2018-04-15 21:35:44,119 INFO  [Log] Loading Property File 
+2018-04-15 21:35:44,121 INFO  [Log] Loading Property File 
+2018-04-15 21:35:44,123 INFO  [Log] Loading Property File 
+2018-04-15 21:35:44,126 INFO  [Log] Opening Browser 
+2018-04-15 21:35:46,834 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:46,836 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when details entered are incorrect       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:46,838 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:47,435 INFO  [Log] Closing Browser 
+2018-04-15 21:35:47,607 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:47,609 INFO  [Log] Loading Property File 
+2018-04-15 21:35:47,611 INFO  [Log] Loading Property File 
+2018-04-15 21:35:47,613 INFO  [Log] Loading Property File 
+2018-04-15 21:35:47,615 INFO  [Log] Loading Property File 
+2018-04-15 21:35:47,616 INFO  [Log] Loading Property File 
+2018-04-15 21:35:47,618 INFO  [Log] Loading Property File 
+2018-04-15 21:35:47,619 INFO  [Log] Opening Browser 
+2018-04-15 21:35:51,537 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:51,540 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when details entered are incorrect       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:51,542 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:52,515 INFO  [Log] Closing Browser 
+2018-04-15 21:35:52,774 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:52,775 INFO  [Log] Loading Property File 
+2018-04-15 21:35:52,778 INFO  [Log] Loading Property File 
+2018-04-15 21:35:52,781 INFO  [Log] Loading Property File 
+2018-04-15 21:35:52,783 INFO  [Log] Loading Property File 
+2018-04-15 21:35:52,785 INFO  [Log] Loading Property File 
+2018-04-15 21:35:52,787 INFO  [Log] Loading Property File 
+2018-04-15 21:35:52,791 INFO  [Log] Opening Browser 
+2018-04-15 21:35:55,703 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:55,706 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when details entered are incorrect       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:55,707 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:35:56,308 INFO  [Log] Closing Browser 
+2018-04-15 21:35:56,474 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:35:56,475 INFO  [Log] Loading Property File 
+2018-04-15 21:35:56,478 INFO  [Log] Loading Property File 
+2018-04-15 21:35:56,492 INFO  [Log] Loading Property File 
+2018-04-15 21:35:56,495 INFO  [Log] Loading Property File 
+2018-04-15 21:35:56,500 INFO  [Log] Loading Property File 
+2018-04-15 21:35:56,501 INFO  [Log] Loading Property File 
+2018-04-15 21:35:56,503 INFO  [Log] Opening Browser 
+2018-04-15 21:35:59,256 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:35:59,259 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when details entered are incorrect       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:35:59,261 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:36:00,184 INFO  [Log] Closing Browser 
+2018-04-15 21:36:00,347 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:00,350 INFO  [Log] Loading Property File 
+2018-04-15 21:36:00,353 INFO  [Log] Loading Property File 
+2018-04-15 21:36:00,357 INFO  [Log] Loading Property File 
+2018-04-15 21:36:00,362 INFO  [Log] Loading Property File 
+2018-04-15 21:36:00,366 INFO  [Log] Loading Property File 
+2018-04-15 21:36:00,369 INFO  [Log] Loading Property File 
+2018-04-15 21:36:00,372 INFO  [Log] Opening Browser 
+2018-04-15 21:36:04,037 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:04,040 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when details entered are incorrect       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:04,042 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:36:04,612 INFO  [Log] Closing Browser 
+2018-04-15 21:36:04,829 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:04,831 INFO  [Log] Loading Property File 
+2018-04-15 21:36:04,835 INFO  [Log] Loading Property File 
+2018-04-15 21:36:04,838 INFO  [Log] Loading Property File 
+2018-04-15 21:36:04,842 INFO  [Log] Loading Property File 
+2018-04-15 21:36:04,845 INFO  [Log] Loading Property File 
+2018-04-15 21:36:04,849 INFO  [Log] Loading Property File 
+2018-04-15 21:36:04,852 INFO  [Log] Opening Browser 
+2018-04-15 21:36:07,645 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:07,648 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when password and confirm password donot match       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:07,649 INFO  [Log] Clicking on Account Menu 
+2018-04-15 21:36:09,240 INFO  [Log] Closing Browser 
+2018-04-15 21:36:09,357 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:09,358 INFO  [Log] Loading Property File 
+2018-04-15 21:36:09,361 INFO  [Log] Loading Property File 
+2018-04-15 21:36:09,364 INFO  [Log] Loading Property File 
+2018-04-15 21:36:09,366 INFO  [Log] Loading Property File 
+2018-04-15 21:36:09,368 INFO  [Log] Loading Property File 
+2018-04-15 21:36:09,370 INFO  [Log] Loading Property File 
+2018-04-15 21:36:09,371 INFO  [Log] Opening Browser 
+2018-04-15 21:36:13,192 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:13,194 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user is able to update its respective account password       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:13,196 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:13,424 INFO  [Log] Loading Property File 
+2018-04-15 21:36:13,426 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:13,781 INFO  [Log] Entering Credentials 
+2018-04-15 21:36:13,782 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:13,949 INFO  [Log] Loading Property File 
+2018-04-15 21:36:13,951 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:14,241 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:36:14,336 INFO  [Log] Loading Property File 
+2018-04-15 21:36:14,338 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:14,389 INFO  [Log] Loading Property File 
+2018-04-15 21:36:14,393 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:15,250 INFO  [Log] Closing Browser 
+2018-04-15 21:36:15,422 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:15,424 INFO  [Log] Loading Property File 
+2018-04-15 21:36:15,426 INFO  [Log] Loading Property File 
+2018-04-15 21:36:15,428 INFO  [Log] Loading Property File 
+2018-04-15 21:36:15,430 INFO  [Log] Loading Property File 
+2018-04-15 21:36:15,432 INFO  [Log] Loading Property File 
+2018-04-15 21:36:15,434 INFO  [Log] Loading Property File 
+2018-04-15 21:36:15,436 INFO  [Log] Opening Browser 
+2018-04-15 21:36:17,944 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:17,948 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when password is less than 5 characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:17,950 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:18,146 INFO  [Log] Loading Property File 
+2018-04-15 21:36:18,149 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:18,488 INFO  [Log] Entering Credentials 
+2018-04-15 21:36:18,489 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:18,636 INFO  [Log] Loading Property File 
+2018-04-15 21:36:18,638 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:18,921 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:36:19,076 INFO  [Log] Loading Property File 
+2018-04-15 21:36:19,099 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:19,170 INFO  [Log] Loading Property File 
+2018-04-15 21:36:19,173 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:19,550 INFO  [Log] Closing Browser 
+2018-04-15 21:36:19,719 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:19,721 INFO  [Log] Loading Property File 
+2018-04-15 21:36:19,722 INFO  [Log] Loading Property File 
+2018-04-15 21:36:19,725 INFO  [Log] Loading Property File 
+2018-04-15 21:36:19,727 INFO  [Log] Loading Property File 
+2018-04-15 21:36:19,729 INFO  [Log] Loading Property File 
+2018-04-15 21:36:19,731 INFO  [Log] Loading Property File 
+2018-04-15 21:36:19,732 INFO  [Log] Opening Browser 
+2018-04-15 21:36:22,915 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:22,917 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when password is less than 5 characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:22,919 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:23,149 INFO  [Log] Loading Property File 
+2018-04-15 21:36:23,151 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:23,523 INFO  [Log] Entering Credentials 
+2018-04-15 21:36:23,524 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:23,663 INFO  [Log] Loading Property File 
+2018-04-15 21:36:23,666 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:23,979 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:36:24,094 INFO  [Log] Loading Property File 
+2018-04-15 21:36:24,096 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:24,140 INFO  [Log] Loading Property File 
+2018-04-15 21:36:24,142 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:25,269 INFO  [Log] Closing Browser 
+2018-04-15 21:36:25,429 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:25,431 INFO  [Log] Loading Property File 
+2018-04-15 21:36:25,434 INFO  [Log] Loading Property File 
+2018-04-15 21:36:25,437 INFO  [Log] Loading Property File 
+2018-04-15 21:36:25,440 INFO  [Log] Loading Property File 
+2018-04-15 21:36:25,442 INFO  [Log] Loading Property File 
+2018-04-15 21:36:25,444 INFO  [Log] Loading Property File 
+2018-04-15 21:36:25,446 INFO  [Log] Opening Browser 
+2018-04-15 21:36:28,529 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:28,533 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when password confirmation is less than 5 characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:28,535 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:28,735 INFO  [Log] Loading Property File 
+2018-04-15 21:36:28,738 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:29,086 INFO  [Log] Entering Credentials 
+2018-04-15 21:36:29,086 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:29,248 INFO  [Log] Loading Property File 
+2018-04-15 21:36:29,249 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:29,531 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:36:29,629 INFO  [Log] Loading Property File 
+2018-04-15 21:36:29,631 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:29,690 INFO  [Log] Loading Property File 
+2018-04-15 21:36:29,692 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:30,094 INFO  [Log] Closing Browser 
+2018-04-15 21:36:30,207 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:30,208 INFO  [Log] Loading Property File 
+2018-04-15 21:36:30,210 INFO  [Log] Loading Property File 
+2018-04-15 21:36:30,212 INFO  [Log] Loading Property File 
+2018-04-15 21:36:30,214 INFO  [Log] Loading Property File 
+2018-04-15 21:36:30,216 INFO  [Log] Loading Property File 
+2018-04-15 21:36:30,219 INFO  [Log] Loading Property File 
+2018-04-15 21:36:30,221 INFO  [Log] Opening Browser 
+2018-04-15 21:36:32,968 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:32,973 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when password confirmation is less than 5 characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:32,975 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:33,292 INFO  [Log] Loading Property File 
+2018-04-15 21:36:33,294 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:33,622 INFO  [Log] Entering Credentials 
+2018-04-15 21:36:33,623 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:33,772 INFO  [Log] Loading Property File 
+2018-04-15 21:36:33,778 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:34,057 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:36:34,160 INFO  [Log] Loading Property File 
+2018-04-15 21:36:34,163 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:34,209 INFO  [Log] Loading Property File 
+2018-04-15 21:36:34,211 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:35,237 INFO  [Log] Closing Browser 
+2018-04-15 21:36:35,398 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:35,400 INFO  [Log] Loading Property File 
+2018-04-15 21:36:35,402 INFO  [Log] Loading Property File 
+2018-04-15 21:36:35,404 INFO  [Log] Loading Property File 
+2018-04-15 21:36:35,406 INFO  [Log] Loading Property File 
+2018-04-15 21:36:35,408 INFO  [Log] Loading Property File 
+2018-04-15 21:36:35,410 INFO  [Log] Loading Property File 
+2018-04-15 21:36:35,413 INFO  [Log] Opening Browser 
+2018-04-15 21:36:38,718 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:38,720 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when password confirmation is more than 50 characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:38,722 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:38,926 INFO  [Log] Loading Property File 
+2018-04-15 21:36:38,929 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:39,273 INFO  [Log] Entering Credentials 
+2018-04-15 21:36:39,274 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:39,446 INFO  [Log] Loading Property File 
+2018-04-15 21:36:39,449 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:39,724 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:36:39,823 INFO  [Log] Loading Property File 
+2018-04-15 21:36:39,825 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:39,875 INFO  [Log] Loading Property File 
+2018-04-15 21:36:39,877 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:40,690 INFO  [Log] Closing Browser 
+2018-04-15 21:36:40,862 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:40,863 INFO  [Log] Loading Property File 
+2018-04-15 21:36:40,868 INFO  [Log] Loading Property File 
+2018-04-15 21:36:40,869 INFO  [Log] Loading Property File 
+2018-04-15 21:36:40,871 INFO  [Log] Loading Property File 
+2018-04-15 21:36:40,872 INFO  [Log] Loading Property File 
+2018-04-15 21:36:40,874 INFO  [Log] Loading Property File 
+2018-04-15 21:36:40,876 INFO  [Log] Opening Browser 
+2018-04-15 21:36:44,025 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:44,032 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user is able to update the settings for its profile       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:44,034 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:44,294 INFO  [Log] Loading Property File 
+2018-04-15 21:36:44,296 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:44,613 INFO  [Log] Entering Credentials 
+2018-04-15 21:36:44,614 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:44,751 INFO  [Log] Loading Property File 
+2018-04-15 21:36:44,753 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:45,084 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:36:45,196 INFO  [Log] Loading Property File 
+2018-04-15 21:36:45,199 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:46,592 INFO  [Log] Closing Browser 
+2018-04-15 21:36:46,806 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:46,808 INFO  [Log] Loading Property File 
+2018-04-15 21:36:46,810 INFO  [Log] Loading Property File 
+2018-04-15 21:36:46,819 INFO  [Log] Loading Property File 
+2018-04-15 21:36:46,821 INFO  [Log] Loading Property File 
+2018-04-15 21:36:46,823 INFO  [Log] Loading Property File 
+2018-04-15 21:36:46,825 INFO  [Log] Loading Property File 
+2018-04-15 21:36:46,827 INFO  [Log] Opening Browser 
+2018-04-15 21:36:50,643 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:50,646 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether the length of the First Name and Last Name field is 50       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:50,650 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:50,870 INFO  [Log] Loading Property File 
+2018-04-15 21:36:50,872 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:51,196 INFO  [Log] Entering Credentials 
+2018-04-15 21:36:51,197 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:51,338 INFO  [Log] Loading Property File 
+2018-04-15 21:36:51,341 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:51,623 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:36:51,716 INFO  [Log] Loading Property File 
+2018-04-15 21:36:51,718 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:52,092 INFO  [Log] Closing Browser 
+2018-04-15 21:36:52,408 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:36:52,409 INFO  [Log] Loading Property File 
+2018-04-15 21:36:52,412 INFO  [Log] Loading Property File 
+2018-04-15 21:36:52,415 INFO  [Log] Loading Property File 
+2018-04-15 21:36:52,417 INFO  [Log] Loading Property File 
+2018-04-15 21:36:52,420 INFO  [Log] Loading Property File 
+2018-04-15 21:36:52,433 INFO  [Log] Loading Property File 
+2018-04-15 21:36:52,435 INFO  [Log] Opening Browser 
+2018-04-15 21:36:56,226 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:36:56,231 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when email is more than 50 characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:36:56,233 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:56,438 INFO  [Log] Loading Property File 
+2018-04-15 21:36:56,440 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:56,799 INFO  [Log] Entering Credentials 
+2018-04-15 21:36:56,799 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:36:56,964 INFO  [Log] Loading Property File 
+2018-04-15 21:36:56,967 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:36:57,261 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:36:57,349 INFO  [Log] Loading Property File 
+2018-04-15 21:36:57,351 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:37:08,753 INFO  [Log] The Element containing the email was not found. 
+2018-04-15 21:37:18,793 INFO  [Log] Closing Browser 
+2018-04-15 21:37:18,956 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:37:18,958 INFO  [Log] Loading Property File 
+2018-04-15 21:37:18,960 INFO  [Log] Loading Property File 
+2018-04-15 21:37:18,962 INFO  [Log] Loading Property File 
+2018-04-15 21:37:18,964 INFO  [Log] Loading Property File 
+2018-04-15 21:37:18,966 INFO  [Log] Loading Property File 
+2018-04-15 21:37:18,968 INFO  [Log] Loading Property File 
+2018-04-15 21:37:18,971 INFO  [Log] Opening Browser 
+2018-04-15 21:37:23,715 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:37:23,721 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when email is less than 5 characters       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:37:23,723 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:37:23,936 INFO  [Log] Loading Property File 
+2018-04-15 21:37:23,939 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:37:24,251 INFO  [Log] Entering Credentials 
+2018-04-15 21:37:24,252 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:37:24,388 INFO  [Log] Loading Property File 
+2018-04-15 21:37:24,392 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:37:24,672 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:37:24,776 INFO  [Log] Loading Property File 
+2018-04-15 21:37:24,778 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:37:25,386 INFO  [Log] Your e-mail is required to be at least 5 characters. 
+2018-04-15 21:37:25,419 INFO  [Log] Closing Browser 
+2018-04-15 21:37:25,591 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:37:25,593 INFO  [Log] Loading Property File 
+2018-04-15 21:37:25,597 INFO  [Log] Loading Property File 
+2018-04-15 21:37:25,600 INFO  [Log] Loading Property File 
+2018-04-15 21:37:25,603 INFO  [Log] Loading Property File 
+2018-04-15 21:37:25,630 INFO  [Log] Loading Property File 
+2018-04-15 21:37:25,632 INFO  [Log] Loading Property File 
+2018-04-15 21:37:25,635 INFO  [Log] Opening Browser 
+2018-04-15 21:37:28,454 INFO  [Log] Setting Implicit Wait=10 
+2018-04-15 21:37:28,457 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Verify whether user receives a message when email is invalid       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-04-15 21:37:28,459 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:37:28,696 INFO  [Log] Loading Property File 
+2018-04-15 21:37:28,701 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:37:29,031 INFO  [Log] Entering Credentials 
+2018-04-15 21:37:29,032 INFO  [Log] Clicking on Login Button 
+2018-04-15 21:37:29,176 INFO  [Log] Loading Property File 
+2018-04-15 21:37:29,180 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:37:29,442 INFO  [Log] Clicking on Accounts Menu 
+2018-04-15 21:37:29,544 INFO  [Log] Loading Property File 
+2018-04-15 21:37:29,547 INFO  [Log] Setting Explicit Wait Type = visibility 
+2018-04-15 21:37:30,139 INFO  [Log] Your e-mail is invalid. 
+2018-04-15 21:37:30,172 INFO  [Log] Closing Browser 
+2018-04-15 21:37:30,253 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-04-15 21:37:30,254 INFO  [Log] Loading Property File 
