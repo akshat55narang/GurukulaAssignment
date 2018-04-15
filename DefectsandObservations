@@ -1,0 +1,21 @@
+1. Registration Screen - Unable to register even with the correct values provided in all the fields. Error Message - Registration failed! Please try again later.
+2. Settings Screen - The settings are not being saved.
+3. Modify current user password - Could not modify password. An error has occurred! The password could not be changed.
+4. Logout - If the user is logged in one tab, it is still logged in the other tab and is not logged out successfully.
+5. Session - When Invalidate session is clicked, the session entry  disappears but the user is not logged out of the application.
+6. Reset Password link - the password is not being reset from the browser.
+7. Create Branch  - duplication of entries is allowed, which causes redundancy.Clicking on Save multiple times causes creation of duplicate records.
+8. Create Staff -  duplication of entries is allowed, which causes redundancy . 
+9. Pagination - no pagination present in the Branch page.
+10. On Staff page, the << link redirects user to the home page, ideally it should be disabled ( if their is only first page )  
+11.On Staff page , >> link redirects user to the home page, ideally it should be disabled (if their is only first page)
+12.On Staff page , the pagination doesnot indicate the count per page, hence the list on the first page keeps on growing and doesnot indicate that the records are moved to the next list.
+13.Delete Branch - Cannot delete the branch , which is linked to multiple Staff Items.
+14. WebElements > and < are present in the code but not being used, this could provide extra features to the user.
+15. Incase of duplicate entries in Branch, then it creates an ambiguity as which option is actually selected.
+16. Search Branch / Staff - only full text search is allowed. Hence, contains or starts withwill not return any results.
+17. Search doesnot provide clear info which attribute to search on.    
+18. After search a branch / staff, if you edit/ delete one of the record , the search text field still shows the initial search query  parameter. Eg. if search was performed using name ECE, and one of the entry in the search results is updated as CSE, then still ECE is displayed in search field indicating the user that the still the records with ece are displayed.
+19. In Registration Page , for email name , the input field accepts 100 characters, while the alert message for email length displays "Your e-mail cannot be longer than 50 characters."
+20 In Settings Page ,the input field accepts 100 characters, while the alert message for email length displays "Your e-mail cannot be longer than 50 characters."
+21. 
