@@ -63,7 +63,12 @@ public class StepDefinitionUpdateAccountSettings {
 		if(email.equals("adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa@test.com")){
 	    	emailaddress.clear();
 	    	emailaddress.sendKeys(email);
-	    	Log.info(updateaccountsettings.getLessCharactersErrorMessage().getText());
+	    	try {
+				Log.info(updateaccountsettings.getLessCharactersErrorMessage().getText());
+			} catch (Exception e) {
+				Log.info("The Element containing the email was not found.");
+				e.printStackTrace();
+			}
 	    }
 	    else if(email.equals("a@c")){
 	    	emailaddress.clear();

@@ -19,7 +19,7 @@ import cucumber.api.junit.Cucumber;
 		features="src/test/resources"
 		,glue="stepDefinition"
 		,plugin = { "com.cucumber.listener.ExtentCucumberFormatter:"}
-		,tags={"@Entitylist"}
+		//,tags={"@R1Login1Test"}
 		//,dryRun=true
 		
 		)

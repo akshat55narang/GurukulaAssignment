@@ -39,6 +39,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -52,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Apr 15, 2018 07:15:22 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 15, 2018 09:15:41 PM</span>
 				</a>
 			</li>
 			<li>
@@ -78,6 +79,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -91,6 +93,18 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@Entitylist</a></li>
+					<li><a href='#'>@E2E</a></li>
+					<li><a href='#'>@Negative</a></li>
+					<li><a href='#'>@NegativeCreate</a></li>
+					<li><a href='#'>@Search</a></li>
+					<li><a href='#'>@Login</a></li>
+					<li><a href='#'>@Logout</a></li>
+					<li><a href='#'>@ResetPassword</a></li>
+					<li><a href='#'>@Register</a></li>
+					<li><a href='#'>@UpdatePassword</a></li>
+					<li><a href='#'>@UpdatePassword1</a></li>
+					<li><a href='#'>@R1Login</a></li>
+					<li><a href='#'>@R1Login1Test</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -138,10 +152,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>2</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>4</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -153,10 +167,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='86%'><span class='strong'>43</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='14%'>7</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -168,10 +182,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='97.885%'><span class='strong'>324</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='2.115%'>7</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -188,7 +202,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Entities Overview</span>
-						<span class='test-time'>Apr 15, 2018 07:15:22 PM</span>
+						<span class='test-time'>Apr 15, 2018 09:15:42 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -196,7 +210,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Entitylist</span>
 	</div>
-	<span class='duration right label'>0h 0m 5s+863ms</span>
+	<span class='duration right label'>0h 0m 39s+242ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify whether user is able to view Branch and Staff in the Entities Menu</span>
@@ -248,6 +262,2614 @@
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then User should be able to view Branch and Staff values in the Entity list</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='9' status='pass'>
+	<span class='duration right label'>0h 1m 18s+975ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether user is able to create new Entity</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='10' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@E2E</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user is able to create new Entity</span>
+			
+				<ul class='steps'>
+					<li test-id='11' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='12' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='13' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='15' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='16' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Branch" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='17' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User creates a new "Branch" entry with name "Computer Science"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='18' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to see the created entry in the "Branch" list with name "Computer Science"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='19' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on View Button for "Branch"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to see the specific "Branch" with name "Computer Science"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Edit Button for "Branch"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to edit the specific "Branch" having "Computer Science" with name "Electronics"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='23' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Delete Button for "Branch"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='24' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to Delete the specific "Branch" with name "Electronics"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='25' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@E2E</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user is able to create new Entity</span>
+			
+				<ul class='steps'>
+					<li test-id='26' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='28' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='29' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='30' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='31' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Staff" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='32' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User creates a new "Staff" entry with name "Akshat Narang"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='33' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to see the created entry in the "Staff" list with name "Akshat Narang"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='34' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on View Button for "Staff"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='35' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to see the specific "Staff" with name "Akshat Narang"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='36' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Edit Button for "Staff"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='37' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to edit the specific "Staff" having "Akshat Narang" with name "TestStaff"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='38' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Delete Button for "Staff"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='39' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to Delete the specific "Staff" with name "TestStaff"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='40' status='pass'>
+	<span class='duration right label'>0h 0m 31s+437ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether a Branch or Staff entry is not created when Cancel Button is pressed</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='41' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Negative</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a Branch or Staff entry is not created when Cancel Button is pressed</span>
+			
+				<ul class='steps'>
+					<li test-id='42' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='43' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='44' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='45' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='46' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='47' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Branch" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='48' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on create "Branch" entry with name "Computer Science"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='49' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Clicks on Cancel Button for "Branch"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='50' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should not see the cancelled entry for respective "Branch"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='51' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Negative</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a Branch or Staff entry is not created when Cancel Button is pressed</span>
+			
+				<ul class='steps'>
+					<li test-id='52' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='53' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='54' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='55' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='56' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='57' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Staff" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='58' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on create "Staff" entry with name "Akshat Narang"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='59' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Clicks on Cancel Button for "Staff"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='60' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should not see the cancelled entry for respective "Staff"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='61' status='pass'>
+	<span class='duration right label'>0h 0m 29s+434ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='62' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@NegativeCreate</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+			
+				<ul class='steps'>
+					<li test-id='63' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='64' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='65' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='66' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='67' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='68' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Staff" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='69' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on create "Staff" entry with name "Akshat Narang"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='70' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "This field is required." for the incorrect name format for the respective "Staff"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='71' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@NegativeCreate</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+			
+				<ul class='steps'>
+					<li test-id='72' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='73' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='74' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='75' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='76' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='77' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Staff" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='78' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on create "Staff" entry with name "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='79' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "This field cannot be longer than 50 characters." for the incorrect name format for the respective "Staff"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='80' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@NegativeCreate</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+			
+				<ul class='steps'>
+					<li test-id='81' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='82' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='83' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='84' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='85' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='86' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Staff" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='87' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on create "Staff" entry with name "Akshat1Narang"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='88' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "This field should follow pattern ^[a-zA-Z\s]*$." for the incorrect name format for the respective "Staff"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='89' status='pass'>
+	<span class='duration right label'>0h 0m 9s+997ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='90' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Search</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+			
+				<ul class='steps'>
+					<li test-id='91' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='92' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='93' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='94' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='95' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='96' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Branch" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='97' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User searches for a "Branch" using "Computer Science"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='98' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to view a list of all the matching results</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='99' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Search</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+			
+				<ul class='steps'>
+					<li test-id='100' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='101' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='102' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='103' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='104' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='105' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Staff" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='106' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User searches for a "Staff" using "Akshat Narang"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='107' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to view a list of all the matching results</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='108' status='pass'>
+	<span class='duration right label'>0h 0m 9s+935ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='109' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Search</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+			
+				<ul class='steps'>
+					<li test-id='110' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='111' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='112' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='113' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='114' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='115' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Branch" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='116' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User searches for a "Branch" using "<id>"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='117' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to view a list of all the matching results</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='118' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Search</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+			
+				<ul class='steps'>
+					<li test-id='119' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='120' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='121' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='122' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='123' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='124' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Staff" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='125' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User searches for a "Staff" using "<id>"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='126' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to view a list of all the matching results</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='127' status='pass'>
+	<span class='duration right label'>0h 0m 11s+464ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='128' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Search</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+			
+				<ul class='steps'>
+					<li test-id='129' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='130' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='131' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='132' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='133' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='134' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Branch" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='135' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User searches for a "Branch" using "CSE"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='136' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to view a list of all the matching results</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='137' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Search</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether a user receives an error message when the Branch or Staff name is not in expected format</span>
+			
+				<ul class='steps'>
+					<li test-id='138' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='139' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='140' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='141' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='142' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Entities Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='143' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects "Staff" Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='144' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User searches for a "Staff" using ""</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='145' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to view a list of all the matching results</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='146'>
+					<div class='test-heading'>
+						<span class='test-name'>Login</span>
+						<span class='test-time'>Apr 15, 2018 09:19:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='147' status='pass'>
+	<span class='duration right label'>0h 0m 4s+914ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether user is able to login with Valid Username and Password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='148' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Login</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user is able to login with Valid Username and Password</span>
+			
+				<ul class='steps'>
+					<li test-id='149' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='150' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='151' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters valid "admin" and "admin"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='152' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should be able to Login</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='153' status='pass'>
+	<span class='duration right label'>0h 0m 9s+871ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">: Verify whether user is able to login with Invalid Username or Password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='154' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Login</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">: Verify whether user is able to login with Invalid Username or Password</span>
+			
+				<ul class='steps'>
+					<li test-id='155' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='156' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='157' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters invalid "invaliduser" or invalid "admin"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='158' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should not be able to Login</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='159' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Login</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">: Verify whether user is able to login with Invalid Username or Password</span>
+			
+				<ul class='steps'>
+					<li test-id='160' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='161' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='162' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters invalid "admin" or invalid "invalidpassword"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='163' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should not be able to Login</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='164' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Login</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+444ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user is able to logout of the application</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='165' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='166' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='167' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters valid credentials</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='168' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is able to login to the Application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='169' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User opens Account Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='170' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on logout button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='171' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be able to logout of the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='172' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Logout</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+962ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user is able to edit the logged in account information</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='173' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='174' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='175' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters valid credentials</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='176' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is able to login to the Application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='177' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User opens Settings from Account menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='178' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should be able to edit the logged in account information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='179'>
+					<div class='test-heading'>
+						<span class='test-name'>Forgot Password</span>
+						<span class='test-time'>Apr 15, 2018 09:19:40 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='180' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@ResetPassword</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+195ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user is able to reset the password using the Reset Password Link</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='181' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='182' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='183' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on /Did you forget your password?/</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='184' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters registered email "akshat55narang@gmail.com"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='185' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks Reset Password Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='186' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive a message "Check your e-mails for details on how to reset your password." for Password Reset</span>
+				<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionPasswordReset.user_should_receive_a_message_for_Password_Reset(StepDefinitionPasswordReset.java:79)
+	at ✽.Then User should receive a message "Check your e-mails for details on how to reset your password." for Password Reset(Feature/PasswordReset.feature:12)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='187' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@ResetPassword</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+759ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether Reset Password Button is disabled by default</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='188' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='189' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='190' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on /Did you forget your password?/</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='191' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then The Reset Password button should be disabled.</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='192' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@ResetPassword</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+251ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user receives a message when email is more than 50 characters</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='193' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='194' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='195' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on /Did you forget your password?/</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='196' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters registered email "adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa@test.com"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='197' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive a message "Your e-mail cannot be longer than 50 characters." for Password Reset</span>
+				<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionPasswordReset.user_should_receive_a_message_for_Password_Reset(StepDefinitionPasswordReset.java:89)
+	at ✽.Then User should receive a message "Your e-mail cannot be longer than 50 characters." for Password Reset(Feature/PasswordReset.feature:21)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='198' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@ResetPassword</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+98ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user receives a message when email is less than 5 characters</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='199' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='200' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='201' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on /Did you forget your password?/</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='202' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters registered email "a@c"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='203' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive a message "Your e-mail is required to be at least 5 characters." for Password Reset</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='204' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@ResetPassword</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+975ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user receives a message when email is invalid</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='205' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='206' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='207' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on /Did you forget your password?/</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='208' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters registered email "a"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='209' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive a message "Your e-mail is invalid." for Password Reset</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='210' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@ResetPassword</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+535ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user receives a message when email is not provided</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='211' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='212' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='213' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on /Did you forget your password?/</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='214' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters registered email "akshat55narang@gmail.com"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='215' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User deletes the email text</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='216' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive a message "Your e-mail is required." for Password Reset</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='217'>
+					<div class='test-heading'>
+						<span class='test-name'>Register a New User</span>
+						<span class='test-time'>Apr 15, 2018 09:20:11 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='218' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Register</span>
+	</div>
+	<span class='duration right label'>0h 0m 7s+874ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether a new user is able to Register for gurukula</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='219' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='220' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='221' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters the Registration details</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='222' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And clicks on Register</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='223' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should register his/her account successfully</span>
+				<div class='pre'><pre>java.lang.AssertionError: Values should be different. Actual: Registration failed! Please try again later.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failEquals(Assert.java:185)
+	at org.junit.Assert.assertNotEquals(Assert.java:161)
+	at org.junit.Assert.assertNotEquals(Assert.java:175)
+	at stepDefinition.StepDefinitionRegisterNewUser.user_should_register_his_her_account_successfully(StepDefinitionRegisterNewUser.java:59)
+	at ✽.Then User should register his/her account successfully(Feature/RegisterNewUser.feature:11)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='224' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Register</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+723ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether the Register is deactivated by default</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='225' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='226' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='227' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Register button should be disabled</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='228' status='pass'>
+	<span class='duration right label'>0h 0m 3s+274ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether the Register is deactivated until all the mandatory checks on fields are met</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='229' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='230' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='231' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User doesnot enter all the mandatory fields</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='232' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Register button should be disabled</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='233' status='pass'>
+	<span class='duration right label'>0h 0m 8s+708ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether user receives a message when login contains special characters or Uppercase characters</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='234' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when login contains special characters or Uppercase characters</span>
+			
+				<ul class='steps'>
+					<li test-id='235' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='236' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='237' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters login name "AkshatNarang"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='238' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message for login name "Your login can only contain lower-case letters and digits."</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='239' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when login contains special characters or Uppercase characters</span>
+			
+				<ul class='steps'>
+					<li test-id='240' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='241' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='242' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters login name "akshatnarang@"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='243' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message for login name "Your login can only contain lower-case letters and digits."</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='244' status='fail'>
+	<span class='duration right label'>0h 0m 47s+255ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether user receives a message when details entered are incorrect</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='245' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when details entered are incorrect</span>
+			
+				<ul class='steps'>
+					<li test-id='246' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='247' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='248' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters "login" as "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='249' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your login cannot be longer than 50 characters." for Registering a New User</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='250' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when details entered are incorrect</span>
+			
+				<ul class='steps'>
+					<li test-id='251' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='252' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='253' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters "email" as "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aa.com"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='254' class='node then fail' status='fail'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your e-mail cannot be longer than 50 characters." for Registering a New User</span>
+							<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionRegisterNewUser.user_should_receive_an_error_message_for_Registering_a_New_User(StepDefinitionRegisterNewUser.java:136)
+	at ✽.Then User should receive an error message "Your e-mail cannot be longer than 50 characters." for Registering a New User(Feature/RegisterNewUser.feature:34)
+</pre></div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='255' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when details entered are incorrect</span>
+			
+				<ul class='steps'>
+					<li test-id='256' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='257' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='258' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters "email" as "a@c"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='259' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your e-mail is required to be at least 5 characters." for Registering a New User</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='260' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when details entered are incorrect</span>
+			
+				<ul class='steps'>
+					<li test-id='261' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='262' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='263' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters "email" as "a"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='264' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your e-mail is invalid." for Registering a New User</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='265' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when details entered are incorrect</span>
+			
+				<ul class='steps'>
+					<li test-id='266' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='267' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='268' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters "password" as "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='269' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your password cannot be longer than 50 characters." for Registering a New User</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='270' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when details entered are incorrect</span>
+			
+				<ul class='steps'>
+					<li test-id='271' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='272' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='273' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters "password" as "aa"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='274' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your password is required to be at least 5 characters." for Registering a New User</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='275' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when details entered are incorrect</span>
+			
+				<ul class='steps'>
+					<li test-id='276' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='277' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='278' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters "confirmpassword" as "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='279' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your confirmation password cannot be longer than 50 characters." for Registering a New User</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='280' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Register</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when details entered are incorrect</span>
+			
+				<ul class='steps'>
+					<li test-id='281' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='282' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='283' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters "confirmpassword" as "aaa"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='284' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your confirmation password is required to be at least 5 characters." for Registering a New User</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='285' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Register</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+945ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user receives a message when password and confirm password donot match</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='286' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='287' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Register in Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='288' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters login as "testlogin"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='289' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And USer enters email as "test@test.com"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='290' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters password as "testpassword"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='291' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters confirm password as "testconfirmpassword"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='292' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive an error message "The password and its confirmation do not match!" for Registering a New User</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='293'>
+					<div class='test-heading'>
+						<span class='test-name'>Update Account Password</span>
+						<span class='test-time'>Apr 15, 2018 09:21:30 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='294' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@UpdatePassword</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+40ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user is able to update its respective account password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='295' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='296' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='297' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters valid credentials</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='298' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is able to login to the Application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='299' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='300' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User opens Password Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='301' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters New Password as "testpassword"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='302' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters matching Confirmation Password as "testpassword"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='303' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Save Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='304' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User the new Password should be updated successfully with message "Password changed!".</span>
+				<div class='pre'><textarea>org.junit.ComparisonFailure: expected:<[Password changed!]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinition.StepDefinitionUpdateAccountPassword.user_the_new_Password_should_be_updated_successfully(StepDefinitionUpdateAccountPassword.java:55)
+	at ✽.Then User the new Password should be updated successfully with message "Password changed!".(Feature/UpdateAccountPassword.feature:19)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='305' status='pass'>
+	<span class='duration right label'>0h 0m 10s+605ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether user receives a message when password is less than 5 characters</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='306' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@UpdatePassword</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when password is less than 5 characters</span>
+			
+				<ul class='steps'>
+					<li test-id='307' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='308' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='309' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='310' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='311' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='312' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Password Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='313' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters New Password as "abc"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='314' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your password is required to be at least 5 characters."</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='315' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@UpdatePassword</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when password is less than 5 characters</span>
+			
+				<ul class='steps'>
+					<li test-id='316' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='317' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='318' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='319' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='320' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='321' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Password Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='322' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters New Password as "adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='323' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your password cannot be longer than 50 characters."</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='324' status='pass'>
+	<span class='duration right label'>0h 0m 10s+800ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify whether user receives a message when password confirmation is less than 5 characters</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='325' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@UpdatePassword1</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when password confirmation is less than 5 characters</span>
+			
+				<ul class='steps'>
+					<li test-id='326' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='327' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='328' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='329' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='330' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='331' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Password Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='332' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters matching Confirmation Password as "abc"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='333' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your confirmation password is required to be at least 5 characters."</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='334' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@UpdatePassword1</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify whether user receives a message when password confirmation is less than 5 characters</span>
+			
+				<ul class='steps'>
+					<li test-id='335' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User opens Application in Browser</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='336' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Login Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='337' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters valid credentials</span>
+							<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='338' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is able to login to the Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='339' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='340' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User opens Password Menu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='341' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enters matching Confirmation Password as "adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='342' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should receive an error message "Your confirmation password cannot be longer than 50 characters."</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='343' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@UpdatePassword</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+56ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user receives a message when password confirmation is more than 50 characters</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='344' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='345' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='346' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters valid credentials</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='347' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is able to login to the Application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='348' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='349' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User opens Password Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='350' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters New Password as "akshatnarang"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='351' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters matching Confirmation Password as "akshatnarang111"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='352' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Save Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='353' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive an error message "The password and its confirmation do not match!"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='354'>
+					<div class='test-heading'>
+						<span class='test-name'>Update User Settings</span>
+						<span class='test-time'>Apr 15, 2018 09:22:03 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='355' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@R1Login</span>
+	</div>
+	<span class='duration right label'>0h 0m 6s+0ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user is able to update the settings for its profile</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='356' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='357' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='358' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters valid credentials</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='359' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is able to login to the Application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='360' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='361' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User opens Settings Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='362' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User updates all the settings</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='363' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Save</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='364' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive a confirmation of updated settings with the updated Settings</span>
+				<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionUpdateAccountSettings.user_should_receive_a_confirmation_of_updated_settings_with_the_updated_Settings(StepDefinitionUpdateAccountSettings.java:51)
+	at ✽.Then User should receive a confirmation of updated settings with the updated Settings(Feature/UpdateAccountSettings.feature:17)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='365' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@R1Login</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+674ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether the length of the First Name and Last Name field is 50</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='366' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='367' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='368' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters valid credentials</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='369' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is able to login to the Application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='370' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='371' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User opens Settings Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='372' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then The maximum length of First Name and Last Name should be 50</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='373' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@R1Login1Test</span>
+	</div>
+	<span class='duration right label'>0h 0m 26s+712ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user receives a message when email is more than 50 characters</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='374' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='375' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='376' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters valid credentials</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='377' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is able to login to the Application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='378' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='379' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User opens Settings Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='380' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters email "adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa@test.com"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='381' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive an error message for email "Your e-mail cannot be longer than 50 characters."</span>
+				<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionUpdateAccountSettings.user_should_receive_an_error_message_for_email(StepDefinitionUpdateAccountSettings.java:88)
+	at ✽.Then User should receive an error message for email "Your e-mail cannot be longer than 50 characters."(Feature/UpdateAccountSettings.feature:26)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='382' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@R1Login</span>
+	</div>
+	<span class='duration right label'>0h 0m 5s+533ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user receives a message when email is less than 5 characters</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='383' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='384' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='385' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters valid credentials</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='386' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is able to login to the Application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='387' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='388' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User opens Settings Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='389' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters email "a@c"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='390' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive an error message for email "Your e-mail is required to be at least 5 characters."</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='391' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@R1Login</span>
+	</div>
+	<span class='duration right label'>0h 0m 4s+414ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify whether user receives a message when email is invalid</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='392' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User opens Application in Browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='393' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Login Button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='394' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters valid credentials</span>
+				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>admin</td><td>admin</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='395' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User is able to login to the Application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='396' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on Accounts Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='397' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User opens Settings Menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='398' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters email "a"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='399' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should receive an error message for email "Your e-mail is invalid."</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -330,9 +2952,601 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 15, 2018 07:15:22 PM</td>
+										<td>Apr 15, 2018 09:15:42 PM</td>
 										<td class='linked' test-id='2'>Entities Overview.Verify whether user is able to view Branch and Staff in the Entities Menu</td>
 										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@E2E</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:16:22 PM</td>
+										<td class='linked' test-id='10'>Entities Overview.Verify whether user is able to create new Entity.Verify whether user is able to create new Entity</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:17:09 PM</td>
+										<td class='linked' test-id='25'>Entities Overview.Verify whether user is able to create new Entity.Verify whether user is able to create new Entity</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Negative</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:17:41 PM</td>
+										<td class='linked' test-id='41'>Entities Overview.Verify whether a Branch or Staff entry is not created when Cancel Button is pressed.Verify whether a Branch or Staff entry is not created when Cancel Button is pressed</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:17:57 PM</td>
+										<td class='linked' test-id='51'>Entities Overview.Verify whether a Branch or Staff entry is not created when Cancel Button is pressed.Verify whether a Branch or Staff entry is not created when Cancel Button is pressed</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@NegativeCreate</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:18:13 PM</td>
+										<td class='linked' test-id='62'>Entities Overview.Verify whether a user receives an error message when the Branch or Staff name is not in expected format.Verify whether a user receives an error message when the Branch or Staff name is not in expected format</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:18:29 PM</td>
+										<td class='linked' test-id='71'>Entities Overview.Verify whether a user receives an error message when the Branch or Staff name is not in expected format.Verify whether a user receives an error message when the Branch or Staff name is not in expected format</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:18:36 PM</td>
+										<td class='linked' test-id='80'>Entities Overview.Verify whether a user receives an error message when the Branch or Staff name is not in expected format.Verify whether a user receives an error message when the Branch or Staff name is not in expected format</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Search</span>
+						<span class='category-status right'>
+							<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:18:42 PM</td>
+										<td class='linked' test-id='90'>Entities Overview.Verify whether a user receives an error message when the Branch or Staff name is not in expected format.Verify whether a user receives an error message when the Branch or Staff name is not in expected format</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:18:48 PM</td>
+										<td class='linked' test-id='99'>Entities Overview.Verify whether a user receives an error message when the Branch or Staff name is not in expected format.Verify whether a user receives an error message when the Branch or Staff name is not in expected format</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:18:52 PM</td>
+										<td class='linked' test-id='109'>Entities Overview.Verify whether a user receives an error message when the Branch or Staff name is not in expected format.Verify whether a user receives an error message when the Branch or Staff name is not in expected format</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:18:57 PM</td>
+										<td class='linked' test-id='118'>Entities Overview.Verify whether a user receives an error message when the Branch or Staff name is not in expected format.Verify whether a user receives an error message when the Branch or Staff name is not in expected format</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:19:02 PM</td>
+										<td class='linked' test-id='128'>Entities Overview.Verify whether a user receives an error message when the Branch or Staff name is not in expected format.Verify whether a user receives an error message when the Branch or Staff name is not in expected format</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:19:08 PM</td>
+										<td class='linked' test-id='137'>Entities Overview.Verify whether a user receives an error message when the Branch or Staff name is not in expected format.Verify whether a user receives an error message when the Branch or Staff name is not in expected format</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Login</span>
+						<span class='category-status right'>
+							<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:19:14 PM</td>
+										<td class='linked' test-id='148'>Login.Verify whether user is able to login with Valid Username and Password.Verify whether user is able to login with Valid Username and Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:19:19 PM</td>
+										<td class='linked' test-id='154'>Login.: Verify whether user is able to login with Invalid Username or Password.: Verify whether user is able to login with Invalid Username or Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:19:24 PM</td>
+										<td class='linked' test-id='159'>Login.: Verify whether user is able to login with Invalid Username or Password.: Verify whether user is able to login with Invalid Username or Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:19:29 PM</td>
+										<td class='linked' test-id='164'>Login.Verify whether user is able to logout of the application</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Logout</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:19:35 PM</td>
+										<td class='linked' test-id='172'>Login.Verify whether user is able to edit the logged in account information</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ResetPassword</span>
+						<span class='category-status right'>
+							<span class='label pass'>4</span>
+							<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:19:40 PM</td>
+										<td class='linked' test-id='180'>Forgot Password.Verify whether user is able to reset the password using the Reset Password Link</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:19:44 PM</td>
+										<td class='linked' test-id='187'>Forgot Password.Verify whether Reset Password Button is disabled by default</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:19:51 PM</td>
+										<td class='linked' test-id='192'>Forgot Password.Verify whether user receives a message when email is more than 50 characters</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:19:56 PM</td>
+										<td class='linked' test-id='198'>Forgot Password.Verify whether user receives a message when email is less than 5 characters</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:20:00 PM</td>
+										<td class='linked' test-id='204'>Forgot Password.Verify whether user receives a message when email is invalid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:20:06 PM</td>
+										<td class='linked' test-id='210'>Forgot Password.Verify whether user receives a message when email is not provided</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Register</span>
+						<span class='category-status right'>
+							<span class='label pass'>11</span>
+							<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 11</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:20:11 PM</td>
+										<td class='linked' test-id='218'>Register a New User.Verify whether a new user is able to Register for gurukula</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:20:19 PM</td>
+										<td class='linked' test-id='224'>Register a New User.Verify whether the Register is deactivated by default</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:20:29 PM</td>
+										<td class='linked' test-id='234'>Register a New User.Verify whether user receives a message when login contains special characters or Uppercase characters.Verify whether user receives a message when login contains special characters or Uppercase characters</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:20:33 PM</td>
+										<td class='linked' test-id='239'>Register a New User.Verify whether user receives a message when login contains special characters or Uppercase characters.Verify whether user receives a message when login contains special characters or Uppercase characters</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:20:38 PM</td>
+										<td class='linked' test-id='245'>Register a New User.Verify whether user receives a message when details entered are incorrect.Verify whether user receives a message when details entered are incorrect</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:20:42 PM</td>
+										<td class='linked' test-id='250'>Register a New User.Verify whether user receives a message when details entered are incorrect.Verify whether user receives a message when details entered are incorrect</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:20:58 PM</td>
+										<td class='linked' test-id='255'>Register a New User.Verify whether user receives a message when details entered are incorrect.Verify whether user receives a message when details entered are incorrect</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:02 PM</td>
+										<td class='linked' test-id='260'>Register a New User.Verify whether user receives a message when details entered are incorrect.Verify whether user receives a message when details entered are incorrect</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:06 PM</td>
+										<td class='linked' test-id='265'>Register a New User.Verify whether user receives a message when details entered are incorrect.Verify whether user receives a message when details entered are incorrect</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:10 PM</td>
+										<td class='linked' test-id='270'>Register a New User.Verify whether user receives a message when details entered are incorrect.Verify whether user receives a message when details entered are incorrect</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:14 PM</td>
+										<td class='linked' test-id='275'>Register a New User.Verify whether user receives a message when details entered are incorrect.Verify whether user receives a message when details entered are incorrect</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:21 PM</td>
+										<td class='linked' test-id='280'>Register a New User.Verify whether user receives a message when details entered are incorrect.Verify whether user receives a message when details entered are incorrect</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:25 PM</td>
+										<td class='linked' test-id='285'>Register a New User.Verify whether user receives a message when password and confirm password donot match</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@UpdatePassword</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:21:30 PM</td>
+										<td class='linked' test-id='294'>Update Account Password.Verify whether user is able to update its respective account password</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:36 PM</td>
+										<td class='linked' test-id='306'>Update Account Password.Verify whether user receives a message when password is less than 5 characters.Verify whether user receives a message when password is less than 5 characters</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:41 PM</td>
+										<td class='linked' test-id='315'>Update Account Password.Verify whether user receives a message when password is less than 5 characters.Verify whether user receives a message when password is less than 5 characters</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:57 PM</td>
+										<td class='linked' test-id='343'>Update Account Password.Verify whether user receives a message when password confirmation is more than 50 characters</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@UpdatePassword1</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:21:46 PM</td>
+										<td class='linked' test-id='325'>Update Account Password.Verify whether user receives a message when password confirmation is less than 5 characters.Verify whether user receives a message when password confirmation is less than 5 characters</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:21:52 PM</td>
+										<td class='linked' test-id='334'>Update Account Password.Verify whether user receives a message when password confirmation is less than 5 characters.Verify whether user receives a message when password confirmation is less than 5 characters</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@R1Login</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:22:03 PM</td>
+										<td class='linked' test-id='355'>Update User Settings.Verify whether user is able to update the settings for its profile</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:22:09 PM</td>
+										<td class='linked' test-id='365'>Update User Settings.Verify whether the length of the First Name and Last Name field is 50</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:22:41 PM</td>
+										<td class='linked' test-id='382'>Update User Settings.Verify whether user receives a message when email is less than 5 characters</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 15, 2018 09:22:46 PM</td>
+										<td class='linked' test-id='391'>Update User Settings.Verify whether user receives a message when email is invalid</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@R1Login1Test</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 15, 2018 09:22:14 PM</td>
+										<td class='linked' test-id='373'>Update User Settings.Verify whether user receives a message when email is more than 50 characters</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -351,6 +3565,160 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>6</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Apr 15, 2018 09:19:44 PM</td>
+                                                        <td class='linked' test-id='186'>Forgot Password.Verify whether user is able to reset the password using the Reset Password Link.Then User should receive a message "Check your e-mails for details on how to reset your password." for Password Reset</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionPasswordReset.user_should_receive_a_message_for_Password_Reset(StepDefinitionPasswordReset.java:79)
+	at ✽.Then User should receive a message "Check your e-mails for details on how to reset your password." for Password Reset(Feature/PasswordReset.feature:12)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Apr 15, 2018 09:19:56 PM</td>
+                                                        <td class='linked' test-id='197'>Forgot Password.Verify whether user receives a message when email is more than 50 characters.Then User should receive a message "Your e-mail cannot be longer than 50 characters." for Password Reset</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionPasswordReset.user_should_receive_a_message_for_Password_Reset(StepDefinitionPasswordReset.java:89)
+	at ✽.Then User should receive a message "Your e-mail cannot be longer than 50 characters." for Password Reset(Feature/PasswordReset.feature:21)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Apr 15, 2018 09:20:17 PM</td>
+                                                        <td class='linked' test-id='223'>Register a New User.Verify whether a new user is able to Register for gurukula.Then User should register his/her account successfully</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Values should be different. Actual: Registration failed! Please try again later.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failEquals(Assert.java:185)
+	at org.junit.Assert.assertNotEquals(Assert.java:161)
+	at org.junit.Assert.assertNotEquals(Assert.java:175)
+	at stepDefinition.StepDefinitionRegisterNewUser.user_should_register_his_her_account_successfully(StepDefinitionRegisterNewUser.java:59)
+	at ✽.Then User should register his/her account successfully(Feature/RegisterNewUser.feature:11)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Apr 15, 2018 09:20:47 PM</td>
+                                                        <td class='linked' test-id='254'>Register a New User.Verify whether user receives a message when details entered are incorrect.Verify whether user receives a message when details entered are incorrect.Then User should receive an error message "Your e-mail cannot be longer than 50 characters." for Registering a New User</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionRegisterNewUser.user_should_receive_an_error_message_for_Registering_a_New_User(StepDefinitionRegisterNewUser.java:136)
+	at ✽.Then User should receive an error message "Your e-mail cannot be longer than 50 characters." for Registering a New User(Feature/RegisterNewUser.feature:34)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Apr 15, 2018 09:22:08 PM</td>
+                                                        <td class='linked' test-id='364'>Update User Settings.Verify whether user is able to update the settings for its profile.Then User should receive a confirmation of updated settings with the updated Settings</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionUpdateAccountSettings.user_should_receive_a_confirmation_of_updated_settings_with_the_updated_Settings(StepDefinitionUpdateAccountSettings.java:51)
+	at ✽.Then User should receive a confirmation of updated settings with the updated Settings(Feature/UpdateAccountSettings.feature:17)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Apr 15, 2018 09:22:30 PM</td>
+                                                        <td class='linked' test-id='381'>Update User Settings.Verify whether user receives a message when email is more than 50 characters.Then User should receive an error message for email "Your e-mail cannot be longer than 50 characters."</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.StepDefinitionUpdateAccountSettings.user_should_receive_an_error_message_for_email(StepDefinitionUpdateAccountSettings.java:88)
+	at ✽.Then User should receive an error message for email "Your e-mail cannot be longer than 50 characters."(Feature/UpdateAccountSettings.feature:26)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.junit.ComparisonFailure</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Apr 15, 2018 09:21:35 PM</td>
+                                                        <td class='linked' test-id='304'>Update Account Password.Verify whether user is able to update its respective account password.Then User the new Password should be updated successfully with message "Password changed!".</td>
+                                                        <td><pre><textarea>org.junit.ComparisonFailure: expected:<[Password changed!]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinition.StepDefinitionUpdateAccountPassword.user_the_new_Password_should_be_updated_successfully(StepDefinitionUpdateAccountPassword.java:55)
+	at ✽.Then User the new Password should be updated successfully with message "Password changed!".(Feature/UpdateAccountPassword.feature:19)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -360,37 +3728,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Scenarios
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Steps
 					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>50</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>331</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 15, 2018 07:15:22 PM</div>
+					<div class='panel-lead'>Apr 15, 2018 09:15:41 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 15, 2018 07:15:28 PM</div>
+			 		<div class='panel-lead'>Apr 15, 2018 09:22:51 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>6,222ms</div>
+					<div class='panel-lead'>430,072ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -414,6 +3782,114 @@
 									100%
 							</td>
 						</tr>
+						<tr>
+							<td>@E2E</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Negative</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@NegativeCreate</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Search</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Login</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Logout</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ResetPassword</td>
+							<td>4</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									66.667%
+							</td>
+						</tr>
+						<tr>
+							<td>@Register</td>
+							<td>11</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									84.615%
+							</td>
+						</tr>
+						<tr>
+							<td>@UpdatePassword</td>
+							<td>3</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									75%
+							</td>
+						</tr>
+						<tr>
+							<td>@UpdatePassword1</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@R1Login</td>
+							<td>3</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									75%
+							</td>
+						</tr>
+						<tr>
+							<td>@R1Login1Test</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
 					</table>
 				</div>
 			</div>
@@ -427,31 +3903,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 2,
+				failParent: 4,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 4,
 				
-				passChild: 1,
-				failChild: 0,
+				passChild: 43,
+				failChild: 7,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 7,
 				
-				passGrandChild: 6,
-				failGrandChild: 0,
+				passGrandChild: 324,
+				failGrandChild: 7,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 7,
 			};
 		</script>
 		

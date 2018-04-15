@@ -20,7 +20,7 @@ Then User should receive a confirmation of updated settings with the updated Set
 Scenario: Verify whether the length of the First Name and Last Name field is 50
 Then The maximum length of First Name and Last Name should be 50
 
-@R1Login1
+@R1Login1Test
 Scenario: Verify whether user receives a message when email is more than 50 characters
 When User enters email "adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa@test.com"
 Then User should receive an error message for email "Your e-mail cannot be longer than 50 characters."
