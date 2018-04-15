@@ -27,7 +27,10 @@ log4j.xml - configuration for log4j.
 
 How To Run - 
 In IDE , Open the TestRunner.java class and Run as a Junit Test.
+The project ( Maven Project ) also runs with command - mvn test ( from the folder location where pom.xml is present) and the reports are updated in /target/surefire-reports location.
 
-Test Report location - The Extent Report will be created in the folder cucumber-reports with the name report.html.
+Test Report location - The Extent Report will be created in the folder cucumber-reports with the name report.html. The report for the latest run can be referred.
+
+Note - Due to bugs as specified in DefectsandObservations file, the maven build will result in failure.
 
 
