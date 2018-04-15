@@ -1,4 +1,5 @@
 Feature: Login 
+This feature is used to allow only the valid users to log into the Gurukula application.
 
 Background: User Login
 Given User opens Application in Browser

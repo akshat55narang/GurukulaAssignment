@@ -1,4 +1,5 @@
 Feature: Forgot Password 
+This feature is used to reset the password for a user who forgot his / her password.
 
 Background: User Login
 Given User opens Application in Browser

@@ -8,12 +8,12 @@ And User enters valid credentials
          | admin     | admin     | 
 And User is able to login to the Application 
 
-@Entitylist
+@EntityOverview
 Scenario: Verify whether user is able to view Branch and Staff in the Entities Menu
 When User clicks on Entities Menu 
 Then User should be able to view Branch and Staff values in the Entity list
 
-@E2E
+@EntityOverview
 Scenario Outline: Verify whether user is able to create new Entity  
 And User opens Entities Menu
 And User selects "<entity>" Menu
@@ -31,7 +31,7 @@ Examples:
 	|Staff|Akshat Narang|TestStaff|
 
 
-@Negative
+@EntityOverview
 Scenario Outline: Verify whether a Branch or Staff entry is not created when Cancel Button is pressed 
 And User opens Entities Menu
 And User selects "<entity>" Menu
@@ -43,7 +43,7 @@ Examples:
 	|Branch|Computer Science|
 	|Staff|Akshat Narang|
 
-@NegativeCreate
+@EntityOverview
 Scenario Outline: Verify whether a user receives an error message when the Branch or Staff name is not in expected format 
 And User opens Entities Menu
 And User selects "<entity>" Menu
@@ -56,7 +56,7 @@ Examples:
 	|Staff|Akshat1Narang|This field should follow pattern ^[a-zA-Z\\s]*$.|
 	#|Staff|Akshat Narang|This field should follow pattern ^[a-zA-Z\\s]*$.|
 
-@Search
+@EntityOverview
 Scenario Outline: Verify whether a user receives an error message when the Branch or Staff name is not in expected format 
 And User opens Entities Menu
 And User selects "<entity>" Menu
@@ -67,7 +67,7 @@ Examples:
 	|Branch|Computer Science|
 	|Staff|Akshat Narang|
 
-@Search
+@EntityOverview
 Scenario Outline: Verify whether a user receives an error message when the Branch or Staff name is not in expected format 
 And User opens Entities Menu
 And User selects "<entity>" Menu
@@ -78,7 +78,7 @@ Examples:
 	|Branch|1|
 	|Staff|1|
 	
-@Search
+@EntityOverview
 Scenario Outline: Verify whether a user receives an error message when the Branch or Staff name is not in expected format 
 And User opens Entities Menu
 And User selects "<entity>" Menu

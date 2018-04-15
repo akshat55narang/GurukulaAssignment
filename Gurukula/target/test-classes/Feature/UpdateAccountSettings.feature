@@ -1,4 +1,5 @@
 Feature: Update User Settings 
+This feature is used to update the yser settings for the user logged into the Gurukula Application
 
 Background: User is Logged in with valid credentials
 Given User opens Application in Browser

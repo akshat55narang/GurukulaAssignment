@@ -4,13 +4,13 @@ Background: User Login
 Given User opens Application in Browser
 And User clicks on Register in Accounts Menu
 
-@Register
+@RegisterNewUser
 Scenario: Verify whether a new user is able to Register for gurukula
 When User enters the Registration details
 And clicks on Register
 Then User should register his/her account successfully
 
-@Register
+@RegisterNewUser
 Scenario: Verify whether the Register is deactivated by default
 Then Register button should be disabled
 
@@ -19,7 +19,7 @@ When User doesnot enter all the mandatory fields
 Then Register button should be disabled
 
 
-@Register
+@RegisterNewUser
 Scenario Outline: Verify whether user receives a message when login contains special characters or Uppercase characters
 When User enters login name "<loginname>"
 Then User should receive an error message for login name "Your login can only contain lower-case letters and digits."
@@ -28,7 +28,7 @@ Examples:
 |AkshatNarang|
 |akshatnarang@|
 
-@Register
+@RegisterNewUser
 Scenario Outline: Verify whether user receives a message when details entered are incorrect
 When User enters "<attribute>" as "<value>"
 Then User should receive an error message "<errormessage>" for Registering a New User
@@ -43,7 +43,7 @@ Examples:
 |confirmpassword|aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa|Your confirmation password cannot be longer than 50 characters.|
 |confirmpassword|aaa|Your confirmation password is required to be at least 5 characters.|
 
-@Register
+@RegisterNewUser
 Scenario: Verify whether user receives a message when password and confirm password donot match
 And User enters login as "testlogin"
 And USer enters email as "test@test.com"
