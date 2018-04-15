@@ -68,7 +68,7 @@ public class WebDriverManager {
 		
 		//driver.manage().window().maximize();
 		driver.get(url);
-		Log.info("Setting Implicit Wait");
+		Log.info("Setting Implicit Wait="+implicitWait);
 		driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
 		
 		return driver;
@@ -89,7 +89,7 @@ public class WebDriverManager {
 	// Generic Method to generate Explicit Wait , based on the type of wait provided as Argument
 	public WebDriverWait getExplicitWaitForElement(WebElement element,String waitType){
 		Long explicitWait = ConfigFileManager.getInstance().getConfiguration().getExplicitWait();
-		
+		Log.info("Setting Explicit Wait Type = "+waitType);
 		wait = new WebDriverWait(getDriver(), explicitWait);
 		if(waitType.equals("visibility")){
 		wait.until(ExpectedConditions.visibilityOf(element));
@@ -109,7 +109,9 @@ public class WebDriverManager {
 	}
 	// Method to take screen shot of Web Page.
 	public void getScreenShot(String testcase){
+		Log.info("Taking Screen Shot for testcase="+testcase);
 		File src = ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
+		
 		String path = System.getProperty("user.dir");
 		try {
 			

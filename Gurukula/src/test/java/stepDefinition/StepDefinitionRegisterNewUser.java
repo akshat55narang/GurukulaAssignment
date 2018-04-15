@@ -6,6 +6,7 @@ import objectRepository.UpdateAccountSettingsPage;
 
 import org.junit.Assert;
 
+import cucumber.Log;
 import cucumber.TestContext;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -27,33 +28,35 @@ public class StepDefinitionRegisterNewUser {
 
 	@Given("^User clicks on Register in Accounts Menu$")
 	public void user_clicks_on_Register_in_Accounts_Menu() throws Throwable {
+		Log.info("Clicking on Account Menu");
 		home.getAccountMenu().click();
 		home.getUserRegistrationFromAccountMenu().click();
 	}
 
 	@When("^User enters the Registration details$")
 	public void user_enters_the_Registration_details() throws Throwable {
-		// register = page.getRegistrationPage();
-		register.getLoginIdForNewUserRegistration().sendKeys("");
-
+		
 		register.getLoginIdForNewUserRegistration().sendKeys("akshatnarang");
 		register.getEmailIdForNewUserRegistration().sendKeys(
 				"akshat55narang@gmail.com");
 		register.getPasswordForNewUserRegistration().sendKeys("liverpoolFC");
 		register.getPasswordConfirmationForNewUserRegistration().sendKeys(
 				"liverpoolFC");
+		
 
 	}
 
 	@When("^clicks on Register$")
 	public void clicks_on_Register() throws Throwable {
+		Log.info("Clicking on Registration Button");
 		register.getRegisterButtonForNewUserRegistration().click();
 	}
 
 	@Then("^User should register his/her account successfully$")
 	public void user_should_register_his_her_account_successfully()
 			throws Throwable {
-		Assert.assertEquals("Registration failed! Please try again later.",
+		
+		Assert.assertNotEquals("Registration failed! Please try again later.",
 				register.getRegistrationFailureMessage().getText());
 
 	}
@@ -72,11 +75,7 @@ public class StepDefinitionRegisterNewUser {
 
 	@When("^User enters login name \"([^\"]*)\"$")
 	public void user_enters_login_name(String login) throws Throwable {
-		/*if (login
-				.equals("adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")) {
-			register.getLoginIdForNewUserRegistration().sendKeys(login);
-
-		} else*/ if (login.equals("AkshatNarang")) {
+		if (login.equals("AkshatNarang")) {
 			register.getLoginIdForNewUserRegistration().sendKeys(login);
 
 		} else if (login.equals("akshatnarang@")) {

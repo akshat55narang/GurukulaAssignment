@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import objectRepository.HomePage;
 import objectRepository.UpdateAccountSettingsPage;
+import cucumber.Log;
 import cucumber.TestContext;
 import cucumber.api.java.en.*;
 
@@ -43,9 +44,7 @@ public class StepDefinitionUpdateAccountSettings {
 	@When("^User clicks on Save$")
 	public void user_clicks_on_Save() throws Throwable {
 	    updateaccountsettings.getSaveButton().click();
-	    //wait = new WebDriverWait(testContext.getWebDriverManager().getDriver(), 20);
-	   // wait.until(ExpectedConditions.visibilityOf(element));
-	}
+	  }
 
 	@Then("^User should receive a confirmation of updated settings with the updated Settings$")
 	public void user_should_receive_a_confirmation_of_updated_settings_with_the_updated_Settings() throws Throwable {
@@ -64,17 +63,17 @@ public class StepDefinitionUpdateAccountSettings {
 		if(email.equals("adminaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadminaaaaaaaaaaaaaaaaaaaaaaaaaaa@test.com")){
 	    	emailaddress.clear();
 	    	emailaddress.sendKeys(email);
-	    	//System.out.println(updateaccountsettings.getLessCharactersErrorMessage().getText());
+	    	Log.info(updateaccountsettings.getLessCharactersErrorMessage().getText());
 	    }
 	    else if(email.equals("a@c")){
 	    	emailaddress.clear();
 	    	emailaddress.sendKeys(email);
-	    	//System.out.println(updateaccountsettings.getLessCharactersErrorMessage().getText());
+	    	Log.info(updateaccountsettings.getLessCharactersErrorMessage().getText());
 	    }
 	    else if(email.equals("a")){
 	    	emailaddress.clear();
 	    	emailaddress.sendKeys(email);
-	    	//System.out.println(updateaccountsettings.getLessCharactersErrorMessage().getText());
+	    	Log.info(updateaccountsettings.getLessCharactersErrorMessage().getText());
 	    }
 	}
 	

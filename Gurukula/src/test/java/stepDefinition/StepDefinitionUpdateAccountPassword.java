@@ -30,7 +30,7 @@ public class StepDefinitionUpdateAccountPassword {
 	
 	@Given("^User opens Password Menu$")
 	public void user_opens_Password_Menu() throws Throwable {
-		wait = testContext.getWebDriverManager().getExplicitWaitForElement(home.getListItemPasswordFromAccountsMenu(), "visibility");
+		testContext.getWebDriverManager().getExplicitWaitForElement(home.getListItemPasswordFromAccountsMenu(), "visibility");
 	    home.getListItemPasswordFromAccountsMenu().click();
 	}
 
@@ -71,7 +71,6 @@ public class StepDefinitionUpdateAccountPassword {
 	    	org.junit.Assert.assertEquals(errormessage, updateaccountpassword.getConfirmPasswordErrorMessage().getText());
 	    }
 	    else if (errormessage.equals("The password and its confirmation do not match!")){
-	    	//The password and its confirmation do not match!
 	    	org.junit.Assert.assertEquals(errormessage, updateaccountpassword.getPasswordMismatchErrorMessage().getText());
 	    }
 	}
