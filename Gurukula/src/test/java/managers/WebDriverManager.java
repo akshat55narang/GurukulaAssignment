@@ -51,16 +51,16 @@ public class WebDriverManager {
 		Long implicitWait = Long.parseLong(ConfigFileManager.getInstance().getConfiguration().getimplicitWait());
 		String operatingSystem=ConfigFileManager.getInstance().getConfiguration().getOS();
 		System.out.println(chromeDriverWindows);
+		
 		if(browser.equals("chrome")){
 			if(operatingSystem.equals("Linux")){
 				System.setProperty("webdriver.chrome.driver", chromeDriverLinux);
 				Log.info("Opening Browser");
 			driver = new ChromeDriver();
 			}
-		}
-		else if(browser.equals("chrome")){
+		
 			if(operatingSystem.equals("Windows")){
-				System.setProperty("webdriver.chrome.driver", chromeDriverLinux);
+				System.setProperty("webdriver.chrome.driver", chromeDriverWindows);
 				Log.info("Opening Browser");
 			driver = new ChromeDriver();
 	}
